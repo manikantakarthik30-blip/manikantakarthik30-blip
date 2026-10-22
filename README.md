@@ -118,7 +118,7 @@
 </p>
 
 <p align="center">
-  <sub>Using AI as a working  my personal partner</sub>
+  <sub><b>Using AI as a personal  working partner</b></sub>
 </p>
 
 ---
