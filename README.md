@@ -28,7 +28,7 @@ I'm a B.Tech student in **Computer Science and Engineering (Data Science)** at *
 
 **Core skills:** Python, SQL, HTML, CSS, JavaScript  
 **Interests:** Data science, machine learning, databases, and software development  
-**Achievement:** CALIBO AI Academy — **Top Performer**
+
 
 
 ## Technical Skills
