@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Animated thunder axe</title>
+  <desc id="desc">An original fantasy axe with glowing forged metal, a carved handle, blue lightning, and animated energy rings.</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8ffff"/><stop offset=".18" stop-color="#a8c7d5"/><stop offset=".4" stop-color="#657d96"/><stop offset=".57" stop-color="#d7e3ec"/><stop offset=".78" stop-color="#7086a1"/><stop offset="1" stop-color="#e7f5fb"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#eafcff"/><stop offset=".3" stop-color="#7eeaff"/><stop offset=".65" stop-color="#477fff"/><stop offset="1" stop-color="#baf9ff"/></linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfad6f"/><stop offset=".3" stop-color="#73452f"/><stop offset=".52" stop-color="#f0c78a"/><stop offset=".75" stop-color="#4a2830"/><stop offset="1" stop-color="#c38b58"/></linearGradient>
+    <radialGradient id="aura"><stop stop-color="#65e7ff" stop-opacity=".46"/><stop offset="1" stop-color="#367dff" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    .weapon{transform-box:view-box;transform-origin:770px 120px;animation:swing 5s ease-in-out infinite}
+    .bolt{fill:none;stroke:url(#edge);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:250;stroke-dashoffset:250;filter:url(#glow);animation:strike 4.5s ease-in-out infinite}
+    .bolt.b2{animation-delay:2.2s;stroke-width:2.2}
+    .ring{transform-origin:765px 105px;animation:spin 16s linear infinite}
+    .halo{transform-origin:765px 105px;animation:pulse 2.1s ease-in-out infinite}
+    .spark{animation:flash 1.2s ease-in-out infinite alternate}
+    @keyframes swing{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+    @keyframes strike{0%,8%,100%{stroke-dashoffset:250;opacity:0}14%{opacity:1}26%{stroke-dashoffset:0;opacity:.95}35%{opacity:.1}42%{opacity:0}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes pulse{0%,100%{opacity:.4;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
+    @keyframes flash{from{opacity:.2}to{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.weapon,.bolt,.ring,.halo,.spark{animation:none}.bolt{stroke-dashoffset:0;opacity:.35}}
+  </style>
+  <rect width="1200" height="300" rx="12" fill="#070d18"/>
+  <path d="M0 36H1200 M0 264H1200" stroke="#8baac7" stroke-opacity=".12"/>
+  <path d="M20 20H170 M20 20V48 M1180 20H1030 M1180 20V48 M20 280H170 M20 280V252 M1180 280H1030 M1180 280V252" fill="none" stroke="#78e9ff" stroke-opacity=".48"/>
+  <ellipse cx="765" cy="115" rx="290" ry="180" fill="url(#aura)"/>
+  <g class="ring" fill="none" stroke="#54dfff" stroke-opacity=".62">
+    <ellipse cx="765" cy="105" rx="190" ry="72" stroke-width="1.5" stroke-dasharray="4 10"/>
+    <ellipse cx="765" cy="105" rx="220" ry="92" stroke-width="1" stroke-dasharray="2 17"/>
+  </g>
+  <path class="bolt" d="M550 -5L585 37L565 61L612 79L592 101L636 122L621 147L668 170"/>
+  <path class="bolt b2" d="M1025 -5L1002 39L1026 61L986 90L1003 112L960 140L976 163"/>
+  <path class="bolt b2" d="M420 85L454 105L438 126L478 143L463 162"/>
+  <g class="weapon">
+    <!-- handle -->
+    <path d="M760 116L785 130L949 274L926 294L748 139Z" fill="url(#handle)" stroke="#e8ca9a" stroke-width="2.5"/>
+    <path d="M777 143L797 160L810 149L791 132Z M813 174L833 191L847 179L827 162Z M849 205L869 222L883 210L863 193Z M885 236L905 253L919 241L899 224Z" fill="#1e2738" stroke="#e2c18c" stroke-width="1.5"/>
+    <path d="M926 265L951 285L933 301L909 280Z" fill="#d3b37e" stroke="#fff0bd" stroke-width="2"/>
+    <!-- axe head -->
+    <path d="M761 93C723 54 685 25 630 31C653 50 644 63 638 75C621 102 647 133 679 145C705 155 735 137 769 121Z" fill="url(#steel)" stroke="#d5f9ff" stroke-width="3"/>
+    <path d="M633 32C661 43 682 65 684 92C687 115 705 132 731 137C705 151 675 143 655 122C630 95 655 69 633 32Z" fill="#182638" stroke="#7deaff" stroke-width="2"/>
+    <path d="M638 36C665 54 678 76 677 96C676 115 699 138 726 140" fill="none" stroke="url(#edge)" stroke-width="3" filter="url(#glow)"/>
+    <!-- poll / hammer back -->
+    <path d="M765 78L817 59L856 73L865 100L842 125L795 130L758 111Z" fill="url(#steel)" stroke="#dffaff" stroke-width="3"/>
+    <path d="M818 60L831 83L865 84L865 100L842 125L822 112L834 95L805 89Z" fill="#3c5067" stroke="#a9eaf7" stroke-width="1.7"/>
+    <!-- central socket and ornamental lines -->
+    <path d="M747 82L776 72L799 91L791 120L764 132L744 112Z" fill="#192638" stroke="#e7c58e" stroke-width="3"/>
+    <path d="M758 89L779 84L788 98L780 115L765 119L753 105Z" fill="#83f1ff" fill-opacity=".33" stroke="#7deaff" stroke-width="2" filter="url(#glow)"/>
+    <path d="M705 64L721 73L713 87L730 96 M699 120L717 112L727 123 M806 75L818 91L806 108" fill="none" stroke="#edf9ff" stroke-width="2" stroke-linecap="round"/>
+    <path d="M759 127L779 145L798 137" fill="none" stroke="#7deaff" stroke-width="2" filter="url(#glow)"/>
+  </g>
+  <g class="halo"><circle cx="765" cy="105" r="55" fill="url(#aura)"/><circle cx="765" cy="105" r="5" fill="#fff" filter="url(#glow)"/></g>
+  <g fill="#d8faff">
+    <circle class="spark" cx="628" cy="48" r="2"/><circle class="spark" cx="691" cy="20" r="1.4"/><circle class="spark" cx="870" cy="48" r="1.6"/><circle class="spark" cx="913" cy="120" r="1.5"/><circle class="spark" cx="694" cy="188" r="1.4"/><circle class="spark" cx="1011" cy="207" r="1.7"/><circle class="spark" cx="563" cy="189" r="1.3"/><circle class="spark" cx="1058" cy="57" r="1.3"/>
+  </g>
+  <text x="70" y="105" font-family="Consolas,monospace" font-size="12" letter-spacing="3" fill="#75eaff">ACTIVITY // VERIFIED</text>
+  <text x="70" y="143" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#f2f7ff">GitHub Contributions</text>
+  <text x="70" y="171" font-family="Consolas,monospace" font-size="12" fill="#9db4ce">Real contribution calendar below</text>
+  <path d="M70 190H330" stroke="#6deaff" stroke-width="2"/>
+  <text x="70" y="220" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5" fill="#7f96b2">NO SYNTHETIC COUNTS</text>
+</svg>
