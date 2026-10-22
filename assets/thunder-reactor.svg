@@ -92,15 +92,13 @@
       <circle cx="930" cy="178" r="8" fill="#ffffff"/>
     </g>
     <g transform="translate(74 0)">
-      <text x="0" y="132" class="sub" fill="#70e9ff">THUNDER // SYSTEMS ONLINE</text>
-      <text x="0" y="187" class="title" fill="#f5f8ff">KARTHIK</text>
+      <text x="0" y="187" class="title" fill="#f5f8ff">MANIKANTA</text>
       <text x="3" y="220" class="sub" fill="#ffba68">CODE WITH LOGIC.</text>
-      <text x="3" y="243" class="sub" fill="#ffba68">BUILD WITH CINEMA.</text>
+      <text x="3" y="243" class="sub" fill="#ffba68">BUILD WITH AI.</text>
       <path d="M2 263 H385" stroke="url(#electric)" stroke-width="2" opacity=".85"/>
       <text x="3" y="286" class="small" fill="#9cb6d0">CSE • DATA SCIENCE • CREATIVE TECHNOLOGY</text>
-      <text x="3" y="306" class="small" fill="#667f99">ARC CORE: STABLE  /  LIGHTNING: CHARGED</text>
     </g>
     <path d="M28 22 H150 M28 22 V56 M1172 22 H1050 M1172 22 V56 M28 338 H150 M28 338 V304 M1172 338 H1050 M1172 338 V304" fill="none" stroke="#7deaff" stroke-opacity=".45" stroke-width="1.5"/>
-    <text x="1157" y="329" text-anchor="end" class="small" fill="#8495aa">K//01 — DEV PROFILE</text>
+    <text x="1157" y="329" text-anchor="end" class="small" fill="#8495aa">DEV PROFILE</text>
   </g>
 </svg>
