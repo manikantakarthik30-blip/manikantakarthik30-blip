@@ -23,13 +23,17 @@
 
 ## About me
 
-I'm **B. Manikanta **, a B.Tech student in **Computer Science and Engineering (Data Science)** at **Dhanekula Institute of Engineering and Technology**.
+👋 Hi, I'm **B. Manikanta**, a B.Tech Computer Science student specializing in Data Science.
 
-I like building practical software and data-driven projects, then giving them a visual identity that feels deliberate—not like a default template. Outside the engineering side, I'm a cinematic-design enthusiast: electric-blue thunder, red-and-gold reactor visuals, HUD-inspired layouts, and smooth motion.
+💻 I enjoy building projects that solve real-world problems and exploring how technology, AI, and machine learning can make everyday tasks easier.
 
-- **Core skills:** Python, SQL, data science concepts, HTML, CSS, and JavaScript.
-- **Currently improving:** applied machine learning, data workflows, and full-stack project development.
-- **Design principle:** useful engineering first; visual impact with a purpose.
+🚀 I've worked on projects like **Nishira.Trade**, a paper trading platform with AI-powered features, and a **Fake Job & Internship Detector** that uses machine learning to identify potentially fraudulent opportunities.
+
+🛠️ I mainly work with Python, JavaScript, React.js, and Supabase. I'm also exploring AI tools, prompt engineering, and full-stack development to improve my skills and build better applications.
+
+📚 I'm always learning something new, experimenting with ideas, and turning what I learn into practical projects.
+
+🤝 I'm open to learning from others, collaborating on interesting projects, and growing as a developer.
 
 ## Technology systems
 
@@ -49,9 +53,6 @@ I like building practical software and data-driven projects, then giving them a 
 <p align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=111111" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
 </p>
 
 <p align="center">
@@ -117,7 +118,7 @@ I like building practical software and data-driven projects, then giving them a 
 </p>
 
 <p align="center">
-  <sub>THUNDER CHARGED · REACTOR STABLE · BUILT WITH CURIOSITY</sub>
+  <sub>Using AI as a working  my personal partner</sub>
 </p>
 
 ---
