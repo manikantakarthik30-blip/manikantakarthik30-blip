@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Karthik — Thunder and Reactor Cinematic Developer Banner</title>
+  <desc id="desc">Original animated blue lightning and red-gold reactor inspired cinematic developer banner.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050a14"/>
+      <stop offset=".52" stop-color="#10111b"/>
+      <stop offset="1" stop-color="#1c0b0d"/>
+    </linearGradient>
+    <radialGradient id="blueGlow">
+      <stop offset="0" stop-color="#42e8ff" stop-opacity=".8"/>
+      <stop offset=".4" stop-color="#1573ff" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#1573ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldGlow">
+      <stop offset="0" stop-color="#fff6bf" stop-opacity=".9"/>
+      <stop offset=".23" stop-color="#ffb13b" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ff4a24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe7a0"/>
+      <stop offset=".35" stop-color="#f6a43a"/>
+      <stop offset=".65" stop-color="#c43d2d"/>
+      <stop offset="1" stop-color="#63202c"/>
+    </linearGradient>
+    <linearGradient id="electric" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9ffff"/>
+      <stop offset=".45" stop-color="#4be8ff"/>
+      <stop offset="1" stop-color="#4476ff"/>
+    </linearGradient>
+    <filter id="blueBlur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="goldBlur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#8bb6d9" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1200" height="360" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .star { animation: twinkle 2.8s ease-in-out infinite alternate; }
+    .star.s2 { animation-delay: -1.2s; }
+    .star.s3 { animation-delay: -.4s; }
+    .bolt { fill:none; stroke:url(#electric); stroke-linecap:round; stroke-linejoin:round; stroke-width:3; stroke-dasharray:340; stroke-dashoffset:340; animation: strike 4.8s ease-in-out infinite; filter:url(#blueBlur); }
+    .bolt.second { animation-delay:2.35s; stroke-width:2; }
+    .reactor { transform-origin:930px 178px; animation: reactorSpin 18s linear infinite; }
+    .pulse { transform-origin:930px 178px; animation: pulse 2.1s ease-in-out infinite; }
+    .trail { fill:none; stroke:url(#metal); stroke-width:3; stroke-linecap:round; stroke-dasharray:16 24; animation: trail 5s linear infinite; filter:url(#goldBlur); }
+    .core { animation: corePulse 2.1s ease-in-out infinite; }
+    .title { font: 800 42px 'Segoe UI', Arial, sans-serif; letter-spacing: 1.8px; }
+    .sub { font: 600 14px 'Consolas', 'Courier New', monospace; letter-spacing: 3px; }
+    .small { font: 500 10px 'Consolas', 'Courier New', monospace; letter-spacing: 1.4px; }
+    @keyframes twinkle { from { opacity:.2; transform:scale(.7); } to { opacity:1; transform:scale(1.2); } }
+    @keyframes strike { 0%, 8%, 100% { stroke-dashoffset:340; opacity:0; } 12% { opacity:1; } 23% { stroke-dashoffset:0; opacity:.95; } 30% { opacity:.1; } 36% { opacity:0; } }
+    @keyframes reactorSpin { to { transform:rotate(360deg); } }
+    @keyframes pulse { 0%,100% { opacity:.45; transform:scale(.94); } 50% { opacity:1; transform:scale(1.06); } }
+    @keyframes trail { to { stroke-dashoffset:-400; } }
+    @keyframes corePulse { 0%,100% { opacity:.68; } 50% { opacity:1; } }
+    @media (prefers-reduced-motion: reduce) { .star,.bolt,.reactor,.pulse,.trail,.core { animation:none; } .bolt { stroke-dashoffset:0; opacity:.8; } }
+  </style>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect width="1200" height="360" fill="url(#grid)"/>
+    <ellipse cx="210" cy="180" rx="330" ry="250" fill="url(#blueGlow)" opacity=".55"/>
+    <ellipse cx="960" cy="190" rx="280" ry="240" fill="url(#goldGlow)" opacity=".66"/>
+    <g fill="#d8f7ff">
+      <circle class="star" cx="70" cy="55" r="1.5"/><circle class="star s2" cx="310" cy="92" r="1.2"/><circle class="star s3" cx="405" cy="45" r="1.4"/>
+      <circle class="star s2" cx="550" cy="280" r="1.3"/><circle class="star" cx="745" cy="63" r="1.4"/><circle class="star s3" cx="1120" cy="74" r="1.5"/>
+      <circle class="star s2" cx="1080" cy="287" r="1.2"/><circle class="star" cx="685" cy="317" r="1.1"/><circle class="star s3" cx="175" cy="290" r="1.2"/>
+    </g>
+    <path class="bolt" d="M70 -10 L125 58 L103 79 L165 118 L135 147 L181 166 L155 204 L218 231 L197 259"/>
+    <path class="bolt second" d="M420 -20 L385 42 L414 66 L362 102 L391 126 L340 159 L365 190"/>
+    <path class="bolt second" d="M705 10 L670 58 L690 82 L648 110"/>
+    <path class="trail" d="M765 290 C840 240 825 164 905 108 S1060 63 1220 113"/>
+    <path class="trail" d="M760 318 C855 280 852 211 932 173 S1080 146 1220 189" opacity=".6" style="animation-delay:-2s"/>
+    <g class="reactor">
+      <circle cx="930" cy="178" r="108" fill="none" stroke="#ff9b46" stroke-opacity=".22" stroke-width="1"/>
+      <circle cx="930" cy="178" r="92" fill="none" stroke="url(#metal)" stroke-width="7" stroke-dasharray="40 12 8 12" filter="url(#goldBlur)"/>
+      <circle cx="930" cy="178" r="75" fill="none" stroke="#ffcf78" stroke-opacity=".8" stroke-width="2" stroke-dasharray="2 8"/>
+      <path d="M930 95 L942 117 L966 112 L968 137 L991 149 L978 171 L991 192 L968 204 L966 230 L942 225 L930 248 L918 225 L894 230 L892 204 L869 192 L882 171 L869 149 L892 137 L894 112 L918 117 Z" fill="none" stroke="url(#metal)" stroke-width="2"/>
+    </g>
+    <g class="pulse">
+      <circle cx="930" cy="178" r="58" fill="url(#goldGlow)"/>
+      <circle cx="930" cy="178" r="43" fill="#ff9a35" fill-opacity=".12" stroke="#ffbc69" stroke-width="2" filter="url(#goldBlur)"/>
+      <circle cx="930" cy="178" r="29" fill="#ffb33d" fill-opacity=".25" stroke="#ffe7ad" stroke-width="2"/>
+      <circle class="core" cx="930" cy="178" r="17" fill="#fff2c5" filter="url(#goldBlur)"/>
+      <circle cx="930" cy="178" r="8" fill="#ffffff"/>
+    </g>
+    <g transform="translate(74 0)">
+      <text x="0" y="132" class="sub" fill="#70e9ff">THUNDER // SYSTEMS ONLINE</text>
+      <text x="0" y="187" class="title" fill="#f5f8ff">KARTHIK</text>
+      <text x="3" y="220" class="sub" fill="#ffba68">CODE WITH LOGIC.</text>
+      <text x="3" y="243" class="sub" fill="#ffba68">BUILD WITH CINEMA.</text>
+      <path d="M2 263 H385" stroke="url(#electric)" stroke-width="2" opacity=".85"/>
+      <text x="3" y="286" class="small" fill="#9cb6d0">CSE • DATA SCIENCE • CREATIVE TECHNOLOGY</text>
+      <text x="3" y="306" class="small" fill="#667f99">ARC CORE: STABLE  /  LIGHTNING: CHARGED</text>
+    </g>
+    <path d="M28 22 H150 M28 22 V56 M1172 22 H1050 M1172 22 V56 M28 338 H150 M28 338 V304 M1172 338 H1050 M1172 338 V304" fill="none" stroke="#7deaff" stroke-opacity=".45" stroke-width="1.5"/>
+    <text x="1157" y="329" text-anchor="end" class="small" fill="#8495aa">K//01 — DEV PROFILE</text>
+  </g>
+</svg>
