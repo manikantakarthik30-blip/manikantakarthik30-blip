@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Mjölnir-inspired animated hammer</title>
+  <desc id="desc">An original silver hammer illustration with Norse-inspired details and electric-blue lightning.</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7ffff"/><stop offset=".22" stop-color="#b7c9d8"/><stop offset=".48" stop-color="#596d84"/><stop offset=".72" stop-color="#e5f2fa"/><stop offset="1" stop-color="#7288a0"/></linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8bd7b"/><stop offset=".5" stop-color="#75452f"/><stop offset="1" stop-color="#c58a52"/></linearGradient>
+    <radialGradient id="aura"><stop stop-color="#6aeaff" stop-opacity=".52"/><stop offset="1" stop-color="#286cff" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    .hammer{transform-origin:760px 145px;animation:lift 4.5s ease-in-out infinite}
+    .bolt{fill:none;stroke:#9bf4ff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:260;stroke-dashoffset:260;filter:url(#glow);animation:strike 4s ease-in-out infinite}
+    .bolt.b2{animation-delay:2s;stroke-width:2.2}
+    .ring{transform-origin:760px 120px;animation:spin 14s linear infinite}
+    .core{transform-origin:760px 120px;animation:pulse 1.9s ease-in-out infinite}
+    @keyframes lift{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(2deg) translateY(-5px)}}
+    @keyframes strike{0%,8%,100%{stroke-dashoffset:260;opacity:0}14%{opacity:1}28%{stroke-dashoffset:0;opacity:1}36%{opacity:.08}42%{opacity:0}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes pulse{0%,100%{opacity:.55;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
+    @media(prefers-reduced-motion:reduce){.hammer,.bolt,.ring,.core{animation:none}.bolt{stroke-dashoffset:0;opacity:.35}}
+  </style>
+  <rect width="1200" height="300" rx="12" fill="#07101d"/>
+  <path d="M0 34H1200 M0 266H1200" stroke="#92b8d8" stroke-opacity=".13"/>
+  <path d="M20 20H160 M20 20V48 M1180 20H1040 M1180 20V48 M20 280H160 M20 280V252 M1180 280H1040 M1180 280V252" fill="none" stroke="#78e9ff" stroke-opacity=".48"/>
+  <ellipse cx="760" cy="130" rx="270" ry="165" fill="url(#aura)"/>
+  <g class="ring" fill="none" stroke="#72eaff" stroke-opacity=".65"><ellipse cx="760" cy="120" rx="185" ry="70" stroke-width="1.5" stroke-dasharray="4 10"/><ellipse cx="760" cy="120" rx="218" ry="92" stroke-width="1" stroke-dasharray="2 16"/></g>
+  <path class="bolt" d="M535 -8L570 35L550 57L594 78L575 102L619 122L604 148L650 170"/>
+  <path class="bolt b2" d="M1005 -8L981 35L1004 59L965 86L984 110L944 137L960 160"/>
+  <path class="bolt b2" d="M450 70L478 91L463 110L494 129L480 151"/>
+  <g class="hammer">
+    <path d="M755 133L780 146L932 273L910 293L742 156Z" fill="url(#handle)" stroke="#f2d09a" stroke-width="2.5"/>
+    <path d="M778 154L798 171L812 159L792 142Z M813 184L833 201L847 189L827 172Z M848 214L868 231L882 219L862 202Z M883 244L903 261L917 249L897 232Z" fill="#1d2b3c" stroke="#e8c38b" stroke-width="1.5"/>
+    <path d="M728 90L691 56L646 54L623 72L641 96L625 119L653 143L702 145L742 132L780 136L815 119L825 91L799 70L765 71Z" fill="url(#steel)" stroke="#e1f8ff" stroke-width="3"/>
+    <path d="M646 56L672 77L665 99L683 119L716 132L688 142L652 128L632 108L646 89L630 72Z" fill="#223246" stroke="#81e9ff" stroke-width="1.7"/>
+    <path d="M704 75L735 84L742 111L721 132L697 116L691 94Z" fill="#182638" stroke="#e5c48a" stroke-width="2.5"/>
+    <path d="M708 84L729 90L733 108L719 121L705 109Z" fill="#73e9ff" fill-opacity=".35" stroke="#9af4ff" stroke-width="2" filter="url(#glow)"/>
+    <path d="M653 68L670 82L659 94L677 107 M753 85L770 98L758 111L775 122" fill="none" stroke="#f4fdff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="core"><circle cx="715" cy="104" r="50" fill="url(#aura)"/><circle cx="715" cy="104" r="5" fill="#fff" filter="url(#glow)"/></g>
+  <g fill="#e0fbff"><circle cx="616" cy="49" r="1.7"/><circle cx="685" cy="25" r="1.4"/><circle cx="850" cy="42" r="1.6"/><circle cx="904" cy="124" r="1.5"/><circle cx="681" cy="190" r="1.4"/><circle cx="1020" cy="205" r="1.5"/></g>
+  <text x="70" y="105" font-family="Consolas,monospace" font-size="12" letter-spacing="3" fill="#75eaff">THUNDER / POWER</text>
+  <text x="70" y="145" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#f2f7ff">Mjölnir</text>
+  <text x="70" y="174" font-family="Consolas,monospace" font-size="12" fill="#9db4ce">Animated hammer illustration</text>
+  <path d="M70 192H315" stroke="#6deaff" stroke-width="2"/>
+  <text x="70" y="220" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5" fill="#7f96b2">LIGHTNING EFFECTS • SVG</text>
+</svg>
