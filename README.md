@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-Profile-101827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
   <img src="https://img.shields.io/badge/Focus-Data%20Science-087EA4?style=for-the-badge&logo=python&logoColor=white" alt="Focus: Data Science" />
-  <img src="https://img.shields.io/badge/Style-Cinematic-9D3DFF?style=for-the-badge&logo=adobeaftereffects&logoColor=white" alt="Cinematic style" />
+  
 </p>
 
 <p align="center">
