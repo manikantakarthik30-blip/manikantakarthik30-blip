@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Arc-reactor-inspired energy core</title>
+  <desc id="desc">A blue luminous circular reactor with steel, gold, and red rings.</desc>
+  <defs>
+    <radialGradient id="core" cx="50%" cy="46%" r="54%"><stop offset="0" stop-color="#f4ffff"/><stop offset=".22" stop-color="#a9f7ff"/><stop offset=".48" stop-color="#22d3ee"/><stop offset=".76" stop-color="#087ca5"/><stop offset="1" stop-color="#071d31"/></radialGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f7fb"/><stop offset=".42" stop-color="#7e91a7"/><stop offset=".72" stop-color="#29384d"/><stop offset="1" stop-color="#b4c5d8"/></linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    .rings{transform-origin:120px 120px;animation:spin 18s linear infinite}
+    .pulse{transform-origin:120px 120px;animation:pulse 2s ease-in-out infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes pulse{0%,100%{opacity:.72;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
+    @media(prefers-reduced-motion:reduce){.rings,.pulse{animation:none}}
+  </style>
+  <circle cx="120" cy="120" r="111" fill="#07111e" stroke="#6e2430" stroke-width="4"/>
+  <g class="rings"><circle cx="120" cy="120" r="101" fill="none" stroke="#cf4a42" stroke-width="3" stroke-dasharray="26 9"/><circle cx="120" cy="120" r="91" fill="#121f30" stroke="#b98a3b" stroke-width="4"/><circle cx="120" cy="120" r="79" fill="none" stroke="url(#steel)" stroke-width="9"/><circle cx="120" cy="120" r="64" fill="#0a1828" stroke="#48d8ef" stroke-width="3"/></g>
+  <g stroke="#9befff" stroke-width="4" stroke-linecap="round" opacity=".9"><path d="M120 57v14 M120 169v14 M57 120h14 M169 120h14"/><path d="m75 75 10 10 M155 155l10 10 M165 75l-10 10 M85 155l-10 10"/></g>
+  <g class="pulse"><circle cx="120" cy="120" r="47" fill="url(#core)" stroke="#d1fbff" stroke-width="2" filter="url(#glow)"/><circle cx="120" cy="120" r="31" fill="none" stroke="#e9ffff" stroke-width="2" opacity=".8"/><path d="M120 91 129 112 151 120 129 128 120 149 111 128 89 120 111 112Z" fill="#f1ffff" opacity=".9"/><circle cx="120" cy="120" r="8" fill="#fff"/></g>
+</svg>
