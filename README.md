@@ -23,13 +23,12 @@
 
 ## About me
 
-I'm **B. Manikanta (Karthik)**, a B.Tech student in **Computer Science and Engineering (Data Science)** at **Dhanekula Institute of Engineering and Technology**.
+I'm **B. Manikanta **, a B.Tech student in **Computer Science and Engineering (Data Science)** at **Dhanekula Institute of Engineering and Technology**.
 
 I like building practical software and data-driven projects, then giving them a visual identity that feels deliberate—not like a default template. Outside the engineering side, I'm a cinematic-design enthusiast: electric-blue thunder, red-and-gold reactor visuals, HUD-inspired layouts, and smooth motion.
 
 - **Core skills:** Python, SQL, data science concepts, HTML, CSS, and JavaScript.
 - **Currently improving:** applied machine learning, data workflows, and full-stack project development.
-- **Achievement:** CALIBO AI Academy — Top Performer.
 - **Design principle:** useful engineering first; visual impact with a purpose.
 
 ## Technology systems
