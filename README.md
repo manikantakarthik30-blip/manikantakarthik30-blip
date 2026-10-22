@@ -3,36 +3,46 @@
   Copyright (c) 2026 B_MANIKANTA_1805. See LICENSE.
 -->
 
-<p align="center">
-  <img src="./assets/thunder-reactor.svg" alt="Animated red-gold technology armor, reactor and blue lightning" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=750&color=71E7FF&center=true&vCenter=true&width=780&lines=Python+%7C+SQL+%7C+Data+Science;Building+AI-assisted+and+data-driven+projects;Computer+Science+%26+Engineering" alt="Python, SQL, data science and software engineering" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-Profile-101827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
-  <img src="https://img.shields.io/badge/Focus-Data%20Science-087EA4?style=for-the-badge&logo=python&logoColor=white" alt="Data science" />
-  <img src="https://img.shields.io/badge/Academic-B.Tech-34495e?style=for-the-badge" alt="B.Tech student" />
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="30%">
+        <a href="https://tenor.com/view/avengers-endgame-iron-man-arc-reactor-blasting-blaster-gif-16163148">
+          <img src="https://media1.tenor.com/m/9E-DZdv-rkkAAAAd/avengers-endgame-iron-man.gif" width="190" alt="Iron Man armor animation" />
+        </a>
+      </td>
+      <td align="center" width="40%">
+        <img src="./assets/arc-reactor.svg" width="116" alt="Animated arc-reactor-inspired energy core" />
+        <h1>B. MANIKANTA</h1>
+        <p><strong>B.Tech — Computer Science & Engineering (Data Science)</strong></p>
+        <p>Python · Data Science · Web Development · AI Projects</p>
+      </td>
+      <td align="center" width="30%">
+        <a href="https://tenor.com/view/thor-storm-breaker-lightning-avengers-endgame-mjolnir-gif-14713306">
+          <img src="https://media1.tenor.com/m/ANzHsmJ6UUcAAAAd/thor-storm-breaker.gif" width="190" alt="Thor with Stormbreaker and lightning animation" />
+        </a>
+      </td>
+    </tr>
+  </table>
+  <p>
+    <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
+    <a href="https://github.com/manikantakarthik30-blip?tab=repositories"><img src="https://img.shields.io/badge/Repositories-Browse-26364a?style=for-the-badge&logo=github" alt="Browse repositories" /></a>
+  </p>
+</div>
 
 <p align="center">
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-## About
+## About Me
 
-I'm **B. Manikanta (Karthik)**, a B.Tech student in **Computer Science and Engineering (Data Science)** at **Dhanekula Institute of Engineering and Technology**.
+I'm a B.Tech student in **Computer Science and Engineering (Data Science)** at **Dhanekula Institute of Engineering and Technology**. I build software and data-focused projects and am developing my skills in Python, SQL, data science, and web technologies.
 
-I work on software and data-focused projects, with an interest in practical machine learning, data workflows, and clear user interfaces.
+- **Core skills:** Python, SQL, HTML, CSS, JavaScript
+- **Technical interests:** Applied data science, machine learning, databases, and software development
+- **Achievement:** CALIBO AI Academy — Top Performer
 
-- **Core technologies:** Python, SQL, HTML, CSS, and JavaScript.
-- **Learning focus:** applied data science, machine learning, databases, and software engineering.
-- **Achievement:** CALIBO AI Academy — Top Performer.
-- **Approach:** build useful features, document decisions, and improve through testing.
-
-## Technologies
+## Technical Skills
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -40,18 +50,13 @@ I work on software and data-focused projects, with an interest in practical mach
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=plotly&logoColor=white" alt="Matplotlib" />
-</p>
-<p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-</p>
-<p align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=111111" alt="Firebase" />
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
 </p>
 
@@ -59,7 +64,7 @@ I work on software and data-focused projects, with an interest in practical mach
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-## Selected projects
+## Featured Projects
 
 <table>
   <tr>
@@ -71,7 +76,7 @@ I work on software and data-focused projects, with an interest in practical mach
     </td>
     <td width="50%" valign="top">
       <h3>Nishira.Trade</h3>
-      A paper-trading project exploring virtual portfolios, market data, watchlists, and trading workflows.
+      Paper-trading project exploring virtual portfolios, market data, watchlists, and trading workflows.
       <br/><br/>
       <a href="https://github.com/manikantakarthik30-blip/nishiratrade"><img src="https://img.shields.io/badge/View_repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Nishira.Trade repository" /></a>
     </td>
@@ -79,15 +84,15 @@ I work on software and data-focused projects, with an interest in practical mach
   <tr>
     <td width="50%" valign="top">
       <h3>Fake Job & Internship Detector</h3>
-      A project aimed at helping users assess potentially suspicious job and internship opportunities.
+      A project intended to help assess potentially suspicious job and internship opportunities.
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/fake-job-detector"><img src="https://img.shields.io/badge/View_repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Fake Job Detector repository" /></a>
+      <a href="https://github.com/manikantakarthik30-blip/fake-job-detector"><img src="https://img.shields.io/badge/View_repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Fake Job and Internship Detector repository" /></a>
     </td>
     <td width="50%" valign="top">
-      <h3>AI Print OS</h3>
-      An in-development print-design and marketplace concept combining design tools with print-product workflows.
+      <h3>Python for Data Science</h3>
+      A repository for Python and data science learning materials.
       <br/><br/>
-      <sub>Private project — repository not linked publicly.</sub>
+      <a href="https://github.com/manikantakarthik30-blip/python-for-data-science"><img src="https://img.shields.io/badge/View_repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Python for Data Science repository" /></a>
     </td>
   </tr>
 </table>
@@ -96,24 +101,38 @@ I work on software and data-focused projects, with an interest in practical mach
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-## GitHub contributions
+## GitHub Activity
 
 <p align="center">
-  <a href="https://github.com/manikantakarthik30-blip"><img src="https://ghchart.rshah.org/54dfff/manikantakarthik30-blip" alt="Contribution calendar generated from public GitHub contribution data for manikantakarthik30-blip" width="100%" /></a>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=manikantakarthik30-blip&show_icons=true&include_all_commits=true&hide_border=true&theme=transparent" alt="GitHub statistics for manikantakarthik30-blip" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=manikantakarthik30-blip&layout=compact&hide_border=true&theme=transparent" alt="Most-used languages in accessible repositories for manikantakarthik30-blip" />
 </p>
 
 <p align="center">
-  <img src="./assets/stormbreaker.svg" alt="Animated thunder axe and lightning illustration" width="100%" />
-</p>
-
-The heatmap above is provided by a third-party chart service using public GitHub contribution data. For the authoritative contribution totals and details, check the [official GitHub profile contribution calendar](https://github.com/manikantakarthik30-blip). A third-party image may be cached or temporarily unavailable; it does not create or modify contributions.
-
-## Contact
-
-<p align="center">
-  <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-View_profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="View GitHub profile" /></a>
+  <a href="https://github.com/manikantakarthik30-blip">
+    <img src="https://ghchart.rshah.org/54dfff/manikantakarthik30-blip" alt="Contribution heatmap based on public GitHub contribution data for manikantakarthik30-blip" width="100%" />
+  </a>
 </p>
 
 <p align="center">
-  <sub>© 2026 B_MANIKANTA_1805. All rights reserved. See <a href="./LICENSE">LICENSE</a>.</sub>
+  <img src="./assets/stormbreaker.svg" alt="Animated Stormbreaker-inspired axe with electric energy" width="100%" />
 </p>
+
+<p align="center">
+  <img src="./assets/mjolnir.svg" alt="Animated Mjölnir-inspired hammer with lightning" width="100%" />
+</p>
+
+<sub>Activity charts are supplied by third-party services and may be cached or differ in coverage from GitHub's official contribution calendar. The official profile is the source of truth for contribution activity. No contribution totals are manually added here.</sub>
+
+## Connect With Me
+
+<p align="center">
+  <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://github.com/manikantakarthik30-blip?tab=repositories"><img src="https://img.shields.io/badge/Projects-View_repositories-087EA4?style=for-the-badge&logo=github" alt="Projects" /></a>
+</p>
+
+---
+
+<p align="center"><sub>Iron Man and Thor GIFs are embedded from Tenor. Original reactor, lightning, Stormbreaker-inspired, and Mjölnir-inspired SVG assets are included in this repository. Third-party character names and imagery belong to their respective owners.</sub></p>
+
+<p align="center"><sub>© 2026 B_MANIKANTA_1805. All rights reserved. See <a href="./LICENSE">LICENSE</a>.</sub></p>
