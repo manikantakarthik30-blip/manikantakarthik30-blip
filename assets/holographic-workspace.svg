@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Animated holographic developer workspace</title>
+  <desc id="desc">A clean futuristic desk with a monitor, floating translucent data panels, blue holographic light, and subtle scanning animations. No characters.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050b16"/><stop offset=".52" stop-color="#0a1830"/><stop offset="1" stop-color="#101329"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72eaff" stop-opacity=".23"/><stop offset=".55" stop-color="#357bff" stop-opacity=".08"/><stop offset="1" stop-color="#a2f7ff" stop-opacity=".16"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#277cff" stop-opacity="0"/><stop offset=".25" stop-color="#5ceaff"/><stop offset=".75" stop-color="#8aabff"/><stop offset="1" stop-color="#277cff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c5d8ed"/><stop offset=".35" stop-color="#526984"/><stop offset=".7" stop-color="#1b2b43"/><stop offset="1" stop-color="#a5c5df"/></linearGradient>
+    <radialGradient id="haze"><stop stop-color="#238bff" stop-opacity=".25"/><stop offset="1" stop-color="#238bff" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="13"/></filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#70baff" stroke-opacity=".07" stroke-width="1"/></pattern>
+    <clipPath id="clip"><rect width="1200" height="360" rx="16"/></clipPath>
+  </defs>
+  <style>
+    .scan{animation:scan 5s ease-in-out infinite}
+    .panel{transform-box:fill-box;transform-origin:center;animation:float 6s ease-in-out infinite}
+    .p2{animation-delay:-2.4s}.p3{animation-delay:-4s}
+    .beam{animation:beam 3.8s ease-in-out infinite}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    .spark{animation:spark 2s ease-in-out infinite alternate}
+    .flow{stroke-dasharray:10 14;animation:flow 8s linear infinite}
+    @keyframes scan{0%,100%{transform:translateY(0);opacity:.12}50%{transform:translateY(175px);opacity:.65}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes beam{0%,100%{opacity:.2}50%{opacity:.75}}
+    @keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+    @keyframes spark{from{opacity:.25;transform:scale(.7)}to{opacity:1;transform:scale(1.25)}}
+    @keyframes flow{to{stroke-dashoffset:-240}}
+    @media(prefers-reduced-motion:reduce){.scan,.panel,.beam,.pulse,.spark,.flow{animation:none}}
+  </style>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="360" fill="url(#bg)"/><rect width="1200" height="360" fill="url(#grid)"/>
+    <ellipse cx="780" cy="180" rx="430" ry="250" fill="url(#haze)"/>
+    <path d="M0 292H1200" stroke="#4caeff" stroke-opacity=".24"/>
+    <path d="M0 298H1200" stroke="url(#edge)" stroke-width="2" filter="url(#glow)"/>
+    <!-- left-side identity -->
+    <g transform="translate(54 0)">
+      <text x="0" y="92" font-family="Consolas,monospace" font-size="12" letter-spacing="3" fill="#72eaff">PERSONAL DEVELOPER SPACE</text>
+      <text x="0" y="145" font-family="Segoe UI,Arial,sans-serif" font-size="39" font-weight="750" letter-spacing=".5" fill="#f3f8ff">B. MANIKANTA</text>
+      <text x="2" y="178" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" letter-spacing="1.1" fill="#9dcaff">DATA SCIENCE  /  SOFTWARE</text>
+      <path d="M2 199H365" stroke="url(#edge)" stroke-width="2"/>
+      <text x="2" y="225" font-family="Consolas,monospace" font-size="12" fill="#b7c9e0">Python · SQL · Machine Learning · Web</text>
+      <text x="2" y="250" font-family="Consolas,monospace" font-size="10" letter-spacing="1.4" fill="#6f8aa9">BUILDING PRACTICAL, DATA-DRIVEN PROJECTS</text>
+      <g fill="#9eefff"><circle class="spark" cx="5" cy="276" r="2"/><circle class="spark" cx="28" cy="276" r="1.2"/><circle class="spark" cx="52" cy="276" r="1.5"/></g>
+    </g>
+    <!-- floating transparent interfaces -->
+    <g class="panel" transform="translate(474 42)">
+      <path d="M0 0H166L180 14V99H0Z" fill="url(#glass)" stroke="#6eeaff" stroke-opacity=".75"/>
+      <path d="M0 20H180" stroke="#70eaff" stroke-opacity=".55"/>
+      <text x="12" y="14" font-family="Consolas,monospace" font-size="8" letter-spacing="1.3" fill="#c6f8ff">SYSTEM / 01</text>
+      <path d="M14 39H76 M14 49H115 M14 59H94 M14 69H131 M14 79H62" stroke="#8bdfff" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+      <circle cx="150" cy="49" r="15" fill="none" stroke="#64eaff" stroke-width="2"/><path d="M150 34A15 15 0 0 1 164 55" fill="none" stroke="#fff" stroke-width="3" filter="url(#glow)"/>
+    </g>
+    <g class="panel p2" transform="translate(696 26)">
+      <path d="M0 0H181L194 13V111H0Z" fill="url(#glass)" stroke="#91b5ff" stroke-opacity=".8"/>
+      <path d="M0 22H194" stroke="#91b5ff" stroke-opacity=".6"/>
+      <text x="12" y="15" font-family="Consolas,monospace" font-size="8" letter-spacing="1.2" fill="#d9e9ff">LIVE ANALYTICS</text>
+      <path d="M14 88V40 M14 88H176" stroke="#8bb8ff" stroke-opacity=".55"/>
+      <path d="M18 77L40 65L60 71L82 48L104 56L128 36L150 47L172 31" fill="none" stroke="#73edff" stroke-width="2.5" filter="url(#glow)"/>
+      <g fill="#a5f6ff"><circle cx="82" cy="48" r="2.5"/><circle cx="128" cy="36" r="2.5"/><circle cx="172" cy="31" r="2.5"/></g>
+    </g>
+    <g class="panel p3" transform="translate(930 68)">
+      <path d="M0 0H137L149 12V84H0Z" fill="url(#glass)" stroke="#69dfff" stroke-opacity=".7"/>
+      <text x="11" y="15" font-family="Consolas,monospace" font-size="8" letter-spacing="1" fill="#c9f9ff">NETWORK</text>
+      <g stroke="#6edfff" stroke-opacity=".8" fill="#112d50"><path d="M25 40L64 29L106 47L79 68L36 67Z" fill="none"/><circle cx="25" cy="40" r="5"/><circle cx="64" cy="29" r="5"/><circle cx="106" cy="47" r="5"/><circle cx="79" cy="68" r="5"/><circle cx="36" cy="67" r="5"/></g>
+    </g>
+    <!-- desk monitor -->
+    <path d="M567 143L841 143L862 267L548 267Z" fill="#0a1321" stroke="#6e8ba9" stroke-width="2"/>
+    <path d="M580 155H829L843 250H565Z" fill="#071629" stroke="#3b9fc7" stroke-opacity=".8"/>
+    <path d="M591 166H817" stroke="#3c7b9e" stroke-opacity=".6"/>
+    <text x="601" y="181" font-family="Consolas,monospace" font-size="8" letter-spacing="1.4" fill="#5fe9ff">WORKSPACE // READY</text>
+    <g stroke-linecap="round" stroke-width="2.2">
+      <path d="M603 195H681 M603 205H721 M603 215H662 M603 225H743 M603 235H699" stroke="#69d8ff" stroke-opacity=".8"/>
+      <path d="M738 195H792 M754 205H813 M733 215H779 M769 225H811 M744 235H791" stroke="#8ba9ff" stroke-opacity=".65"/>
+    </g>
+    <path d="M687 267L677 289H733L722 267" fill="url(#metal)" stroke="#7f9cb9" stroke-width="1.5"/>
+    <path d="M653 290H758L777 298H635Z" fill="url(#metal)" stroke="#9fc4df" stroke-width="1.5"/>
+    <!-- holographic desk plane -->
+    <path d="M440 302L905 302L1056 342H305Z" fill="url(#glass)" stroke="#6ceaff" stroke-opacity=".55" stroke-width="1.5"/>
+    <path d="M470 309H874L970 334H374Z" fill="none" stroke="#5ee9ff" stroke-opacity=".38"/>
+    <path class="flow" d="M330 333H1004" stroke="#8af2ff" stroke-width="1.5" fill="none" opacity=".8"/>
+    <path class="beam" d="M572 140L526 300 M841 140L912 300" stroke="#62dfff" stroke-width="1.5" stroke-opacity=".5" filter="url(#glow)"/>
+    <path class="scan" d="M480 32H1090" stroke="#9bf4ff" stroke-width="1.5" stroke-opacity=".55"/>
+    <g fill="#b8f8ff"><circle class="spark" cx="454" cy="38" r="1.5"/><circle class="spark" cx="896" cy="36" r="1.4"/><circle class="spark" cx="1102" cy="126" r="1.7"/><circle class="spark" cx="1060" cy="282" r="1.2"/><circle class="spark" cx="485" cy="250" r="1.4"/><circle class="spark" cx="1164" cy="61" r="1.4"/></g>
+    <path d="M20 20H145 M20 20V50 M1180 20H1055 M1180 20V50 M20 340H145 M20 340V310 M1180 340H1055 M1180 340V310" fill="none" stroke="#70eaff" stroke-opacity=".48" stroke-width="1.3"/>
+  </g>
+</svg>
