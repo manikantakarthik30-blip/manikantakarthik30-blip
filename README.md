@@ -1,38 +1,38 @@
 <!--
-  GitHub profile README
-  Copyright (c) 2026 B_MANIKANTA_1805. See LICENSE.
+  Cinematic developer profile | Copyright (c) 2026 B_MANIKANTA_1805
+  Original profile assets are proprietary. See LICENSE.
 -->
 
 <p align="center">
-  <img src="./assets/thunder-reactor.svg" alt="Animated red-gold technology armor, reactor and blue lightning" width="100%" />
+  <img src="./assets/thunder-reactor.svg" alt="Animated thunder and reactor cinematic banner" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=750&color=71E7FF&center=true&vCenter=true&width=780&lines=Python+%7C+SQL+%7C+Data+Science;Building+AI-assisted+and+data-driven+projects;Computer+Science+%26+Engineering" alt="Python, SQL, data science and software engineering" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=750&color=71E7FF&center=true&vCenter=true&width=780&lines=Python+%7C+SQL+%7C+Data+Science;Building+AI-powered+and+data-driven+projects;Engineer+by+logic.+Cinematic+mindset+by+choice." alt="Animated typing headline" />
 </p>
 
 <p align="center">
   <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-Profile-101827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
-  <img src="https://img.shields.io/badge/Focus-Data%20Science-087EA4?style=for-the-badge&logo=python&logoColor=white" alt="Data science" />
-  <img src="https://img.shields.io/badge/Academic-B.Tech-34495e?style=for-the-badge" alt="B.Tech student" />
+  <img src="https://img.shields.io/badge/Focus-Data%20Science-087EA4?style=for-the-badge&logo=python&logoColor=white" alt="Focus: Data Science" />
+  <img src="https://img.shields.io/badge/Style-Cinematic-9D3DFF?style=for-the-badge&logo=adobeaftereffects&logoColor=white" alt="Cinematic style" />
 </p>
 
 <p align="center">
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-## About
+## About me
 
 I'm **B. Manikanta (Karthik)**, a B.Tech student in **Computer Science and Engineering (Data Science)** at **Dhanekula Institute of Engineering and Technology**.
 
-I work on software and data-focused projects, with an interest in practical machine learning, data workflows, and clear user interfaces.
+I like building practical software and data-driven projects, then giving them a visual identity that feels deliberate—not like a default template. Outside the engineering side, I'm a cinematic-design enthusiast: electric-blue thunder, red-and-gold reactor visuals, HUD-inspired layouts, and smooth motion.
 
-- **Core technologies:** Python, SQL, HTML, CSS, and JavaScript.
-- **Learning focus:** applied data science, machine learning, databases, and software engineering.
+- **Core skills:** Python, SQL, data science concepts, HTML, CSS, and JavaScript.
+- **Currently improving:** applied machine learning, data workflows, and full-stack project development.
 - **Achievement:** CALIBO AI Academy — Top Performer.
-- **Approach:** build useful features, document decisions, and improve through testing.
+- **Design principle:** useful engineering first; visual impact with a purpose.
 
-## Technologies
+## Technology systems
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
@@ -59,35 +59,35 @@ I work on software and data-focused projects, with an interest in practical mach
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-## Selected projects
+## Featured builds
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Smart Canal Intelligence System</h3>
-      AI-assisted canal monitoring project focused on visible waste detection, video analysis, and monitoring workflows.
+      <h3>🌊 Smart Canal Intelligence System</h3>
+      AI-assisted canal monitoring concept focused on visible waste detection, video analysis, and monitoring workflows.
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system"><img src="https://img.shields.io/badge/View_repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Smart Canal Intelligence System repository" /></a>
+      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system"><img src="https://img.shields.io/badge/Explore-Repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="Explore Smart Canal Intelligence System" /></a>
     </td>
     <td width="50%" valign="top">
-      <h3>Nishira.Trade</h3>
+      <h3>📈 Nishira.Trade</h3>
       A paper-trading project exploring virtual portfolios, market data, watchlists, and trading workflows.
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/nishiratrade"><img src="https://img.shields.io/badge/View_repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Nishira.Trade repository" /></a>
+      <a href="https://github.com/manikantakarthik30-blip/nishiratrade"><img src="https://img.shields.io/badge/Explore-Repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="Explore Nishira.Trade" /></a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>Fake Job & Internship Detector</h3>
-      A project aimed at helping users assess potentially suspicious job and internship opportunities.
+      <h3>🛡️ Fake Job & Internship Detector</h3>
+      A project aimed at helping users assess suspicious job and internship opportunities.
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/fake-job-detector"><img src="https://img.shields.io/badge/View_repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Fake Job Detector repository" /></a>
+      <a href="https://github.com/manikantakarthik30-blip/fake-job-detector"><img src="https://img.shields.io/badge/Explore-Repository-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="Explore Fake Job Detector" /></a>
     </td>
     <td width="50%" valign="top">
-      <h3>AI Print OS</h3>
-      An in-development print-design and marketplace concept combining design tools with print-product workflows.
+      <h3>🎨 AI Print OS</h3>
+      An in-development print-design and marketplace concept combining creative tools with print-product workflows.
       <br/><br/>
-      <sub>Private project — repository not linked publicly.</sub>
+      <sub>Private project — not publicly linked.</sub>
     </td>
   </tr>
 </table>
@@ -96,24 +96,33 @@ I work on software and data-focused projects, with an interest in practical mach
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-## GitHub contributions
+## GitHub telemetry
 
 <p align="center">
-  <a href="https://github.com/manikantakarthik30-blip"><img src="https://ghchart.rshah.org/54dfff/manikantakarthik30-blip" alt="Contribution calendar generated from public GitHub contribution data for manikantakarthik30-blip" width="100%" /></a>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=manikantakarthik30-blip&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub statistics" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=manikantakarthik30-blip&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages" />
+</p>
+
+### Contribution waveform
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/manikantakarthik30-blip/manikantakarthik30-blip/output/contribution-snake.svg" alt="Animated GitHub contribution snake" width="100%" />
+</p>
+
+> The contribution snake is generated by GitHub Actions. Its image appears after the workflow completes successfully for the first time.
+
+## Connect
+
+<p align="center">
+  <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/Follow_my_work-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Follow my work on GitHub" /></a>
 </p>
 
 <p align="center">
-  <img src="./assets/stormbreaker.svg" alt="Animated thunder axe and lightning illustration" width="100%" />
+  <sub>THUNDER CHARGED · REACTOR STABLE · BUILT WITH CURIOSITY</sub>
 </p>
 
-The heatmap above is provided by a third-party chart service using public GitHub contribution data. For the authoritative contribution totals and details, check the [official GitHub profile contribution calendar](https://github.com/manikantakarthik30-blip). A third-party image may be cached or temporarily unavailable; it does not create or modify contributions.
-
-## Contact
+---
 
 <p align="center">
-  <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-View_profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="View GitHub profile" /></a>
-</p>
-
-<p align="center">
-  <sub>© 2026 B_MANIKANTA_1805. All rights reserved. See <a href="./LICENSE">LICENSE</a>.</sub>
+  <sub>© 2026 B_MANIKANTA_1805. Original profile assets are proprietary. All rights reserved. See <a href="./LICENSE">LICENSE</a>. Third-party names and logos belong to their respective owners.</sub>
 </p>
