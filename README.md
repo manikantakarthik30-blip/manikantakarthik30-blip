@@ -3,23 +3,16 @@
   Copyright (c) 2026 B_MANIKANTA_1805. See LICENSE.
 -->
 
-<div align="center">
-  <a href="https://tenor.com/view/iron-man-gif-20009188">
-    <img src="https://media1.tenor.com/m/Jy9Ie9Z1MLoAAAAd/iron-man.gif" width="49%" alt="Iron Man flying in an Avengers Endgame scene" />
-  </a>
-  <a href="https://tenor.com/view/thor-storm-breaker-lightning-avengers-endgame-mjolnir-gif-14713306">
-    <img src="https://media1.tenor.com/m/ANzHsmJ6UUcAAAAd/thor-storm-breaker.gif" width="49%" alt="Thor wielding Stormbreaker with glowing eyes and lightning" />
-  </a>
-</div>
+<p align="center">
+  <img src="./assets/holographic-workspace.svg" alt="Animated holographic developer workspace with floating data panels and blue lighting" width="100%" />
+</p>
 
 <div align="center">
-  <img src="./assets/arc-reactor.svg" width="150" alt="Animated arc-reactor-inspired energy core" />
-  <h1>B. MANIKANTA</h1>
   <p><strong>B.Tech · Computer Science and Engineering (Data Science)</strong></p>
   <p>Python · Data Science · Software Development</p>
   <p>
     <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
-    <a href="https://github.com/manikantakarthik30-blip?tab=repositories"><img src="https://img.shields.io/badge/Projects-Explore-9B2C2C?style=for-the-badge&logo=github&logoColor=white" alt="Explore projects" /></a>
+    <a href="https://github.com/manikantakarthik30-blip?tab=repositories"><img src="https://img.shields.io/badge/Projects-Explore-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="Explore projects" /></a>
   </p>
 </div>
 
@@ -106,13 +99,6 @@ I'm a B.Tech student in **Computer Science and Engineering (Data Science)** at *
   </a>
 </p>
 
-<p align="center">
-  <img src="./assets/stormbreaker.svg" alt="Animated Stormbreaker-inspired axe with electric-blue lightning" width="100%" />
-</p>
-<p align="center">
-  <img src="./assets/mjolnir.svg" alt="Animated Mjölnir-inspired hammer with electric-blue lightning" width="100%" />
-</p>
-
 <sub>GitHub activity cards and the contribution heatmap are third-party displays and may be cached or have different data coverage. Check the official GitHub profile for authoritative contribution activity. No contribution numbers are manually fabricated.</sub>
 
 ## Connect With Me
@@ -124,5 +110,5 @@ I'm a B.Tech student in **Computer Science and Engineering (Data Science)** at *
 
 ---
 
-<p align="center"><sub>Character GIFs are embedded from Tenor. Original reactor, energy-divider, and weapon-inspired SVG artwork is maintained in this repository. Marvel characters and related imagery are the property of their respective owners.</sub></p>
+<p align="center"><sub>The holographic workspace banner and animated blue energy dividers are original SVG artwork maintained in this repository.</sub></p>
 <p align="center"><sub>© 2026 B_MANIKANTA_1805. All rights reserved. See <a href="./LICENSE">LICENSE</a>.</sub></p>
