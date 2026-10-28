@@ -27,12 +27,12 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
 All public project repositories are indexed below. This list refreshes automatically.
 
 <!-- PUBLIC_REPOSITORIES:START -->
-- [ai-printos](https://github.com/manikantakarthik30-blip/ai-printos) — A USEFUL APPLICATION FOR PRINTING-PRESS
-- [CYBER-OS](https://github.com/manikantakarthik30-blip/CYBER-OS) — USEFUL REPO FOR VIBE-CODERS
-- [fake-job-detector](https://github.com/manikantakarthik30-blip/fake-job-detector) — THIS PROJECT IS A PROTOYPE FOR FINDING THE FAKE JOB DECTECTION
-- [job-grief-counselor](https://github.com/manikantakarthik30-blip/job-grief-counselor) — An empathetic, secure, and structured career support system built on Google's Agent Development Kit (ADK 2.0). It guides job seekers through job-loss grief, provides resume optimizing feedback, conducts interview preparation, and drafts structured career action plans—all from a single, secure chat interface.
-- [nishiratrade](https://github.com/manikantakarthik30-blip/nishiratrade) — A modern paper trading platform with simulated real-time stock data, portfolio analytics, leaderboards, and Supabase authentication.
-- [python-for-data-science](https://github.com/manikantakarthik30-blip/python-for-data-science) — Daily practice, exercises, and projects tracking my Python journey for data science.
+- [ai-printos](https://github.com/manikantakarthik30-blip/ai-printos)
+- [CYBER-OS](https://github.com/manikantakarthik30-blip/CYBER-OS)
+- [fake-job-detector](https://github.com/manikantakarthik30-blip/fake-job-detector)
+- [job-grief-counselor](https://github.com/manikantakarthik30-blip/job-grief-counselor)
+- [nishiratrade](https://github.com/manikantakarthik30-blip/nishiratrade)
+- [python-for-data-science](https://github.com/manikantakarthik30-blip/python-for-data-science)
 - [smart-canal-intelligence-system](https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system)
 
 [View all public repositories](https://github.com/manikantakarthik30-blip?tab=repositories)
