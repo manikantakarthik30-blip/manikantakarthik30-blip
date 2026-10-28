@@ -111,7 +111,7 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
 ## ◈ Achievements
 
 - **8.3 GPA** — academic performance reported for B.Tech coursework.
-- **Top Performer — CALIBO AI Academy** — training recognition.
+  
 
 ## ◈ Build philosophy
 
