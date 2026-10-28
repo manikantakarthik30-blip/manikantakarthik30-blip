@@ -1,6 +1,13 @@
 name: Refresh profile assets
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "scripts/generate_technology_banner.py"
+      - "scripts/update_public_repositories.py"
+      - ".github/workflows/update-profile-assets.yml"
   schedule:
     - cron: "17 6 * * *"
   workflow_dispatch:
