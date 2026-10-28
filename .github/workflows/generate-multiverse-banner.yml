@@ -1,12 +1,6 @@
 name: Generate animated multiverse banner
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "README.md"
-      - "scripts/generate_multiverse_banner.py"
-      - ".github/workflows/generate-multiverse-banner.yml"
   workflow_dispatch:
 
 permissions:
