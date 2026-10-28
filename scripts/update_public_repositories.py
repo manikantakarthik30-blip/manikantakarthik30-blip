@@ -56,7 +56,7 @@ def render_table(repos):
     if not repos:
         lines.append("- No public repositories found.")
     lines.extend(["", f"[View all public repositories](https://github.com/{OWNER}?tab=repositories)"])
-    return "\\n".join(lines)
+    return "\n".join(lines)
 
 
 def main():
