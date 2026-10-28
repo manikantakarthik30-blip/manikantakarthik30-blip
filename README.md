@@ -1,6 +1,6 @@
 <!-- Multiverse developer portfolio · profile README -->
 <p align="center">
-  <img src="./assets/multiverse-banner.svg" alt="Cosmic multiverse banner with electric-blue and violet orbital portal" width="100%" />
+  <img src="./assets/multiverse-tools-orbit.gif" alt="Animated multiverse banner with Python, SQL, React, Flutter, Three.js, AI/ML, FastAPI and Git orbiting a cosmic logo" width="100%" />
 </p>
 
 <p align="center">
