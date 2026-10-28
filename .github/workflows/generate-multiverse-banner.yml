@@ -1,6 +1,12 @@
 name: Generate animated multiverse banner
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "scripts/generate_multiverse_banner.py"
+      - ".github/workflows/generate-multiverse-banner.yml"
   workflow_dispatch:
 
 permissions:
@@ -16,8 +22,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install image library
-        run: python -m pip install --upgrade Pillow
+      - name: Install image libraries
+        run: python -m pip install --upgrade Pillow CairoSVG
       - name: Generate animated banner
         run: python scripts/generate_multiverse_banner.py
       - name: Commit GIF
