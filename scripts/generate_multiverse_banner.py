@@ -60,14 +60,14 @@ logo_font = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 31)
 
 # Official brand marks from Simple Icons. Pinned commit URLs keep artwork reproducible.
 TOOLS = [
-    ("PYTHON", "3776AB", "python", "30587d8164a94862e28dac7c0f44578934294769"),
-    ("MYSQL", "4479A1", "mysql", "195caada065db12d587e291d220daa8f19149492"),
-    ("REACT", "61DAFB", "react", "60069956389076bff0f26062b0007a88865249a5"),
-    ("FLUTTER", "54C5F8", "flutter", "01212163acb1526c587a75999d2342dc3cb530c4"),
-    ("THREE.JS", "FFFFFF", "threedotjs", "a7f18290d18807218b96c10450df141c195ab527"),
-    ("FASTAPI", "009688", "fastapi", "ba6ba86ab82c108aad4259a9548494796345bcce"),
-    ("GIT", "F05032", "git", "06fb4e0d9884ae6891e506395fbed2f1bbd07c9c"),
-    ("JAVASCRIPT", "F7DF1E", "javascript", "91e516239d68d6616478b2bad15895dc14f9b087"),
+    ("PYTHON", "3776AB", "python", "develop"),
+    ("MYSQL", "4479A1", "mysql", "develop"),
+    ("REACT", "61DAFB", "react", "develop"),
+    ("FLUTTER", "54C5F8", "flutter", "develop"),
+    ("THREE.JS", "FFFFFF", "threedotjs", "develop"),
+    ("FASTAPI", "009688", "fastapi", "develop"),
+    ("GIT", "F05032", "git", "develop"),
+    ("JAVASCRIPT", "F7DF1E", "javascript", "develop"),
 ]
 cx, cy = 925, 178
 frames = []
