@@ -17,7 +17,7 @@
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-# MANIKANTA KARTHIK
+# MANIKANTA BALAGA
 ### Engineering ideas across software, AI, data, and security.
 
 I’m a third-year B.Tech Computer Science and Engineering (Data Science) student at **Dhanekula Institute of Engineering and Technology**, based in Vijayawada, India. I learn by building practical projects across creative tooling, application security, and computer-vision concepts.
