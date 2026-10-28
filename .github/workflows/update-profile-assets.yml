@@ -1,13 +1,6 @@
-name: Update profile assets
+name: Refresh profile assets
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "README.md"
-      - "scripts/generate_technology_banner.py"
-      - "scripts/update_public_repositories.py"
-      - ".github/workflows/update-profile-assets.yml"
   schedule:
     - cron: "17 6 * * *"
   workflow_dispatch:
@@ -27,7 +20,7 @@ jobs:
           python-version: "3.12"
       - name: Install image libraries
         run: python -m pip install --upgrade Pillow CairoSVG
-      - name: Refresh all public repositories
+      - name: Refresh public repository list
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_OWNER: ${{ github.repository_owner }}
