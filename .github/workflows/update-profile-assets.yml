@@ -7,6 +7,7 @@ on:
       - "README.md"
       - "scripts/generate_technology_banner.py"
       - "scripts/update_public_repositories.py"
+      - "assets/technology-banner-background.jpg"
       - ".github/workflows/update-profile-assets.yml"
   schedule:
     - cron: "17 6 * * *"
