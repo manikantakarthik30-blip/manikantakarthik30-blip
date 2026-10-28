@@ -6,46 +6,23 @@ import io, math, os, random, re, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "assets", "technology-skills-banner.gif")
-W, H, FRAMES, DURATION = 1200, 360, 24, 85
+W, H, FRAMES, DURATION = 1200, 360, 36, 70
 random.seed(24)
 
-# Deep-space gradient with blue/violet nebulae, generated locally (no external assets).
-background = Image.new("RGB", (W, H))
-px = background.load()
-for y in range(H):
-    for x in range(W):
-        nx = x / W
-        blue = math.exp(-(((x - 870) / 300) ** 2 + ((y - 170) / 180) ** 2))
-        violet = math.exp(-(((x - 1080) / 230) ** 2 + ((y - 135) / 200) ** 2))
-        px[x, y] = (
-            5 + int(4 * nx + 13 * blue + 12 * violet),
-            8 + int(3 * nx + 43 * blue + 8 * violet),
-            20 + int(12 * nx + 100 * blue + 40 * violet),
-        )
+# Cinematic, art-directed background. No grid overlay: the source artwork carries the visual weight.
+background_path = os.path.join(ROOT, "assets", "technology-banner-background.jpg")
+background = Image.open(background_path).convert("RGB").resize((W, H), Image.Resampling.LANCZOS).convert("RGBA")
 
-clouds = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-cd = ImageDraw.Draw(clouds, "RGBA")
-cd.ellipse((590, -70, 1120, 400), fill=(16, 111, 242, 56))
-cd.ellipse((830, -90, 1280, 340), fill=(131, 55, 255, 54))
-cd.ellipse((760, 75, 1180, 390), fill=(32, 205, 255, 26))
-background = Image.alpha_composite(background.convert("RGBA"), clouds.filter(ImageFilter.GaussianBlur(48)))
-draw = ImageDraw.Draw(background, "RGBA")
-
-# Restrained HUD grid and static stars.
-for x in range(0, W, 40):
-    draw.line((x, 0, x, H), fill=(100, 145, 220, 13), width=1)
-for y in range(0, H, 40):
-    draw.line((0, y, W, y), fill=(100, 145, 220, 13), width=1)
-for _ in range(155):
-    x, y = random.randrange(W), random.randrange(H)
-    r = random.choice([1, 1, 1, 2])
-    col = random.choice([(190, 222, 255, 130), (103, 232, 249, 150), (196, 181, 253, 135)])
-    draw.ellipse((x-r, y-r, x+r, y+r), fill=col)
-for line in [
-    (34, 28, 150, 28), (34, 28, 34, 62), (W-150, 28, W-34, 28), (W-34, 28, W-34, 62),
-    (34, H-28, 150, H-28), (34, H-62, 34, H-28), (W-150, H-28, W-34, H-28), (W-34, H-62, W-34, H-28)
-]:
-    draw.line(line, fill=(103, 232, 249, 100), width=1)
+# Deepen the left side so the name and headline remain crisp against the brighter space art.
+shade = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+shade_px = shade.load()
+for x in range(W):
+    strength = max(0.0, 1.0 - x / 760.0)
+    alpha = int(205 * strength ** 1.35)
+    if alpha:
+        for y in range(H):
+            shade_px[x, y] = (1, 3, 12, alpha)
+background = Image.alpha_composite(background, shade)
 
 def font(path, size):
     try:
@@ -58,7 +35,7 @@ sub_font = font("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
 pill_font = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 13)
 logo_font = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 31)
 
-# Official brand marks from Simple Icons. Pinned commit URLs keep artwork reproducible.
+# Official technology marks from Simple Icons.
 TOOLS = [
     ("PYTHON", "3776AB", "python", "develop"),
     ("MYSQL", "4479A1", "mysql", "develop"),
@@ -69,12 +46,12 @@ TOOLS = [
     ("GIT", "F05032", "git", "develop"),
     ("JAVASCRIPT", "F7DF1E", "javascript", "develop"),
 ]
-cx, cy = 925, 178
+cx, cy = 910, 145
 frames = []
 icon_images = {}
 for label, hex_color, slug, revision in TOOLS:
     url = f"https://raw.githubusercontent.com/simple-icons/simple-icons/{revision}/icons/{slug}.svg"
-    request = urllib.request.Request(url, headers={"User-Agent": "professional profile-profile-banner/1.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "professional-profile-banner/1.0"})
     with urllib.request.urlopen(request, timeout=20) as response:
         svg = response.read().decode("utf-8")
     svg = re.sub(r"<path", f'<path fill="#{hex_color}"', svg, count=1)
@@ -92,56 +69,105 @@ def ellipse_points(rx, ry, rotation, count=180):
 
 for f in range(FRAMES):
     phase = 2 * math.pi * f / FRAMES
+    pulse = (math.sin(phase * 2) + 1) / 2
     frame = background.copy()
-    glow = Image.new("RGBA", (W, H), (0,0,0,0))
+
+    # A breathing halo around the center mark.
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     gd = ImageDraw.Draw(glow, "RGBA")
-    gd.ellipse((cx-86, cy-86, cx+86, cy+86), fill=(30,110,255,55))
-    gd.ellipse((cx-57, cy-57, cx+57, cy+57), fill=(112,65,255,42))
-    frame = Image.alpha_composite(frame, glow.filter(ImageFilter.GaussianBlur(22)))
+    halo = 94 + int(16 * pulse)
+    gd.ellipse((cx-halo, cy-halo, cx+halo, cy+halo), fill=(27, 109, 255, 65))
+    gd.ellipse((cx-65, cy-65, cx+65, cy+65), fill=(149, 62, 255, 65))
+    frame = Image.alpha_composite(frame, glow.filter(ImageFilter.GaussianBlur(30)))
+
+    # Fast, luminous energy arcs sweep around the planet; each arc has a different phase.
+    energy = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ed = ImageDraw.Draw(energy, "RGBA")
+    for arc in range(4):
+        points = []
+        offset = phase * (1.15 if arc % 2 == 0 else -0.82) + arc * math.pi / 2
+        for j in range(64):
+            t = offset + j / 63 * 1.15
+            rx = 252 + 10 * math.sin(phase + arc)
+            ry = 126 + 7 * math.cos(phase * 1.2 + arc)
+            points.append((cx + rx * math.cos(t), cy + ry * math.sin(t)))
+        color = [(56, 189, 248, 190), (167, 139, 250, 190),
+                 (96, 165, 250, 170), (232, 121, 249, 155)][arc]
+        ed.line(points, fill=color, width=3 if arc < 2 else 2)
+        tx, ty = points[-1]
+        ed.ellipse((tx-4, ty-4, tx+4, ty+4), fill=(225, 247, 255, 240))
+    frame = Image.alpha_composite(frame, energy.filter(ImageFilter.GaussianBlur(8)))
+    frame = Image.alpha_composite(frame, energy)
+
     d = ImageDraw.Draw(frame, "RGBA")
 
-    d.ellipse((cx-176, cy-67, cx+176, cy+67), outline=(103,232,249,130), width=2)
-    d.line(ellipse_points(168, 91, math.radians(-31)), fill=(167,139,250,170), width=2)
-    d.line(ellipse_points(148, 112, math.radians(35)), fill=(96,165,250,110), width=1)
-
-    for k in range(18):
-        a = 2 * math.pi * k / 18 + phase * 1.5
-        x, y = cx + 184 * math.cos(a), cy + 72 * math.sin(a)
-        r = 3 if k % 3 == 0 else 2
-        color = (103,232,249,230) if k % 2 == 0 else (167,139,250,230)
+    # Moving sparks outside the logo path add motion without obscuring the name.
+    for k in range(42):
+        a = 2 * math.pi * k / 42 + phase * (1.8 if k % 2 == 0 else -1.25)
+        rx = 278 + 13 * math.sin(k * 1.3)
+        ry = 135 + 9 * math.cos(k * 0.7)
+        x = cx + rx * math.cos(a)
+        y = cy + ry * math.sin(a)
+        r = 1 + (1 if k % 5 == 0 else 0)
+        color = (130, 225, 255, 180) if k % 2 == 0 else (201, 170, 255, 180)
         d.ellipse((x-r, y-r, x+r, y+r), fill=color)
 
-    d.ellipse((cx-54, cy-54, cx+54, cy+54), fill=(5,10,28,244), outline=(103,232,249,235), width=2)
-    d.ellipse((cx-44, cy-44, cx+44, cy+44), outline=(167,139,250,210), width=2)
-    d.ellipse((cx-33, cy-33, cx+33, cy+33), outline=(96,165,250,135), width=1)
-    d.ellipse((cx-8, cy-8, cx+8, cy+8), fill=(223,252,255,255))
-    box = d.textbbox((0,0), "MB", font=logo_font)
-    d.text((cx-(box[2]-box[0])/2, cy-(box[3]-box[1])/2-3), "MB", font=logo_font, fill=(242,247,255,255))
+    # Subtle outer ring, with independently moving luminous markers.
+    d.ellipse((cx-218, cy-106, cx+218, cy+106), outline=(130, 177, 255, 92), width=1)
+    d.ellipse((cx-174, cy-79, cx+174, cy+79), outline=(190, 157, 255, 58), width=1)
+    for k in range(16):
+        a = 2 * math.pi * k / 16 + phase * 1.9
+        x, y = cx + 220 * math.cos(a), cy + 108 * math.sin(a)
+        radius = 3 if k % 4 == 0 else 1.8
+        d.ellipse((x-radius, y-radius, x+radius, y+radius),
+                  fill=(110, 230, 255, 235) if k % 2 == 0 else (194, 156, 255, 235))
 
-    # Real brand logos rotation the core and rotate on their own axis.
+    # Center emblem.
+    core_r = 43 + int(2 * pulse)
+    d.ellipse((cx-core_r, cy-core_r, cx+core_r, cy+core_r),
+              fill=(3, 7, 22, 245), outline=(100, 224, 255, 255), width=3)
+    d.ellipse((cx-core_r+8, cy-core_r+8, cx+core_r-8, cy+core_r-8),
+              outline=(167, 139, 250, 225), width=2)
+    d.ellipse((cx-17, cy-17, cx+17, cy+17), fill=(54, 113, 255, 170))
+    box = d.textbbox((0, 0), "MB", font=logo_font)
+    d.text((cx-(box[2]-box[0])/2, cy-(box[3]-box[1])/2-3), "MB",
+           font=logo_font, fill=(248, 251, 255, 255))
+
+    # True brand marks rotate themselves while their nodes travel around the center.
     for i, (label, hex_color, _slug, _revision) in enumerate(TOOLS):
         a = 2 * math.pi * i / len(TOOLS) + phase
-        x, y = cx + 208 * math.cos(a), cy + 116 * math.sin(a)
-        bw, bh = 88, 65
+        x = cx + 204 * math.cos(a)
+        y = cy + 92 * math.sin(a)
         color = tuple(bytes.fromhex(hex_color))
-        d.rounded_rectangle((x-bw/2, y-bh/2, x+bw/2, y+bh/2), radius=12,
-                            fill=(4,9,24,244), outline=color+(245,), width=2)
-        # Rotate just the logo, not its label, so each brand remains easy to identify.
-        icon = icon_images[label].rotate(-360 * f / FRAMES + i * 17,
+        r = 28
+        d.ellipse((x-r-5, y-r-5, x+r+5, y+r+5), fill=(3, 7, 22, 232),
+                  outline=color+(240,), width=2)
+        d.ellipse((x-r, y-r, x+r, y+r), outline=(217, 230, 255, 105), width=1)
+        icon = icon_images[label].rotate(-360 * f / FRAMES + i * 19,
                                           resample=Image.Resampling.BICUBIC, expand=False)
-        icon = icon.resize((31,31), Image.Resampling.LANCZOS)
-        frame.alpha_composite(icon, (int(x-15.5), int(y-28)))
-        text_box = d.textbbox((0,0), label, font=pill_font)
-        tw = text_box[2] - text_box[0]
-        d.text((x-tw/2, y+12), label, font=pill_font, fill=color+(255,))
+        icon = icon.resize((40, 40), Image.Resampling.LANCZOS)
+        frame.alpha_composite(icon, (int(x-20), int(y-20)))
+        box = d.textbbox((0, 0), label, font=pill_font)
+        tw = box[2] - box[0]
+        label_w = max(tw+16, 48)
+        d.rounded_rectangle((x-label_w/2, y+32, x+label_w/2, y+53),
+                            radius=7, fill=(2, 6, 18, 230), outline=color+(210,), width=1)
+        d.text((x-tw/2, y+35), label, font=pill_font, fill=color+(255,))
 
-    d.text((73,116), "MANIKANTA BALAGA", font=title_font, fill=(242,247,255,255))
-    d.rounded_rectangle((76,174,124,178), radius=2, fill=(103,232,249,255))
-    d.rounded_rectangle((132,174,157,178), radius=2, fill=(167,139,250,255))
-    d.text((76,195), "SOFTWARE  ·  AI  ·  DATA SCIENCE", font=sub_font, fill=(222,232,255,245))
-    d.text((76,225), "TECHNICAL SKILLS  /  PROFESSIONAL PROFILE", font=sub_font, fill=(137,165,221,245))
-    d.text((1010,320), "TOOLS / 08", font=sub_font, fill=(170,190,235,225))
-    frames.append(frame.convert("RGB").quantize(colors=80, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE))
+    # Typography stays still so the visual energy never harms readability.
+    d.text((68, 101), "MANIKANTA BALAGA", font=title_font, fill=(248, 250, 255, 255))
+    d.rounded_rectangle((72, 151, 125, 155), radius=2, fill=(103, 232, 249, 255))
+    d.rounded_rectangle((132, 151, 160, 155), radius=2, fill=(167, 139, 250, 255))
+    d.text((72, 176), "SOFTWARE ENGINEERING  /  AI  /  DATA SCIENCE",
+           font=sub_font, fill=(229, 238, 255, 250))
+    d.text((72, 207), "Building practical software across disciplines",
+           font=sub_font, fill=(151, 176, 224, 250))
+    d.text((72, 319), "PYTHON   ·   WEB   ·   DATA   ·   SECURITY",
+           font=pill_font, fill=(202, 215, 244, 235))
+
+    # 128-color frames preserve the glow gradients while keeping the GIF reasonably small.
+    frames.append(frame.convert("RGB").quantize(colors=128, method=Image.Quantize.FASTOCTREE,
+                                                dither=Image.Dither.NONE))
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 frames[0].save(OUT, save_all=True, append_images=frames[1:], duration=DURATION, loop=0, optimize=True, disposal=1)
