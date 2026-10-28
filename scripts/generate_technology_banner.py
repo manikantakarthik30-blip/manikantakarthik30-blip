@@ -5,7 +5,7 @@ import cairosvg
 import io, math, os, random, re, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "assets", "professional profile-tools-rotation.gif")
+OUT = os.path.join(ROOT, "assets", "technology-skills-banner.gif")
 W, H, FRAMES, DURATION = 1200, 360, 24, 85
 random.seed(24)
 
