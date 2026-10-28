@@ -1,6 +1,6 @@
 <!-- Multiverse developer portfolio · profile README -->
 <p align="center">
-  <img src="./assets/thunder-reactor.svg" alt="Cosmic reactor banner in electric blue and violet" width="100%" />
+  <img src="./assets/multiverse-banner.svg" alt="Cosmic multiverse banner with electric-blue and violet orbital portal" width="100%" />
 </p>
 
 <p align="center">
