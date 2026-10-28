@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="450" viewBox="0 0 1500 450" role="img" aria-labelledby="title desc">
-  <title id="title">Manikanta Karthik — Multiverse Developer Portfolio</title>
+  <title id="title">Manikanta Balaga — Multiverse Developer Portfolio</title>
   <desc id="desc">A dark cosmic banner with electric-blue and violet nebulae, orbital lines, and a glowing multiverse portal on the right.</desc>
   <defs>
     <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
@@ -107,7 +107,7 @@
     </g>
     <g font-family="Arial, Helvetica, sans-serif">
       <text x="88" y="166" fill="#6ee7f9" font-size="12" font-weight="700" letter-spacing="4">DEVELOPER PORTFOLIO / MULTIVERSE</text>
-      <text x="84" y="229" fill="url(#titleGlow)" font-size="49" font-weight="800" letter-spacing="1.1">MANIKANTA KARTHIK</text>
+      <text x="84" y="229" fill="url(#titleGlow)" font-size="49" font-weight="800" letter-spacing="1.1">MANIKANTA BALAGA</text>
       <rect x="88" y="254" width="54" height="3" rx="1.5" fill="#67e8f9"/>
       <rect x="149" y="254" width="28" height="3" rx="1.5" fill="#8b5cf6"/>
       <text x="88" y="292" fill="#e0e7ff" font-size="17" font-weight="600" letter-spacing="2.1">SOFTWARE  ·  AI  ·  DATA SCIENCE</text>
