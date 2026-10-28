@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Build the animated GitHub profile banner: skills orbit a cosmic MK core."""
+"""Build an animated GitHub profile banner with official tool logos orbiting a cosmic core."""
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
-import math, os, random
+import cairosvg
+import io, math, os, random, re, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "assets", "multiverse-tools-orbit.gif")
@@ -57,10 +58,28 @@ sub_font = font("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
 pill_font = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 13)
 logo_font = font("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 31)
 
-tools = ["PYTHON", "SQL", "REACT", "FLUTTER", "THREE.JS", "AI / ML", "FASTAPI", "GIT"]
-colors = [(103,232,249), (125,211,252), (167,139,250), (196,181,253), (96,165,250), (216,180,254), (103,232,249), (147,197,253)]
-cx, cy = 920, 180
+# Official brand marks from Simple Icons. Pinned commit URLs keep artwork reproducible.
+TOOLS = [
+    ("PYTHON", "3776AB", "python", "30587d8164a94862e28dac7c0f44578934294769"),
+    ("MYSQL", "4479A1", "mysql", "195caada065db12d587e291d220daa8f19149492"),
+    ("REACT", "61DAFB", "react", "60069956389076bff0f26062b0007a88865249a5"),
+    ("FLUTTER", "54C5F8", "flutter", "01212163acb1526c587a75999d2342dc3cb530c4"),
+    ("THREE.JS", "FFFFFF", "threedotjs", "a7f18290d18807218b96c10450df141c195ab527"),
+    ("FASTAPI", "009688", "fastapi", "ba6ba86ab82c108aad4259a9548494796345bcce"),
+    ("GIT", "F05032", "git", "06fb4e0d9884ae6891e506395fbed2f1bbd07c9c"),
+    ("JAVASCRIPT", "F7DF1E", "javascript", "91e516239d68d6616478b2bad15895dc14f9b087"),
+]
+cx, cy = 925, 178
 frames = []
+icon_images = {}
+for label, hex_color, slug, revision in TOOLS:
+    url = f"https://raw.githubusercontent.com/simple-icons/simple-icons/{revision}/icons/{slug}.svg"
+    request = urllib.request.Request(url, headers={"User-Agent": "multiverse-profile-banner/1.0"})
+    with urllib.request.urlopen(request, timeout=20) as response:
+        svg = response.read().decode("utf-8")
+    svg = re.sub(r"<path", f'<path fill="#{hex_color}"', svg, count=1)
+    png = cairosvg.svg2png(bytestring=svg.encode("utf-8"), output_width=96, output_height=96)
+    icon_images[label] = Image.open(io.BytesIO(png)).convert("RGBA")
 
 def orbit_points(rx, ry, rotation, count=180):
     points = []
@@ -99,18 +118,24 @@ for f in range(FRAMES):
     box = d.textbbox((0,0), "MK", font=logo_font)
     d.text((cx-(box[2]-box[0])/2, cy-(box[3]-box[1])/2-3), "MK", font=logo_font, fill=(242,247,255,255))
 
-    for i, label in enumerate(tools):
-        a = 2 * math.pi * i / len(tools) + phase
-        x, y = cx + 185 * math.cos(a), cy + 112 * math.sin(a)
-        box = d.textbbox((0,0), label, font=pill_font)
-        tw, th = box[2]-box[0], box[3]-box[1]
-        pw, ph = tw+22, 29
-        color = colors[i]
-        d.rounded_rectangle((x-pw/2,y-ph/2,x+pw/2,y+ph/2), radius=8,
-                            fill=(5,10,27,238), outline=(*color,230), width=1)
-        d.text((x-tw/2,y-th/2-2), label, font=pill_font, fill=(*color,255))
+    # Real brand logos orbit the core and rotate on their own axis.
+    for i, (label, hex_color, _slug, _revision) in enumerate(TOOLS):
+        a = 2 * math.pi * i / len(TOOLS) + phase
+        x, y = cx + 208 * math.cos(a), cy + 116 * math.sin(a)
+        bw, bh = 88, 65
+        color = tuple(bytes.fromhex(hex_color))
+        d.rounded_rectangle((x-bw/2, y-bh/2, x+bw/2, y+bh/2), radius=12,
+                            fill=(4,9,24,244), outline=color+(245,), width=2)
+        # Rotate just the logo, not its label, so each brand remains easy to identify.
+        icon = icon_images[label].rotate(-360 * f / FRAMES + i * 17,
+                                          resample=Image.Resampling.BICUBIC, expand=False)
+        icon = icon.resize((31,31), Image.Resampling.LANCZOS)
+        frame.alpha_composite(icon, (int(x-15.5), int(y-28)))
+        text_box = d.textbbox((0,0), label, font=pill_font)
+        tw = text_box[2] - text_box[0]
+        d.text((x-tw/2, y+12), label, font=pill_font, fill=color+(255,))
 
-    d.text((73,116), "MANIKANTA KARTHIK", font=title_font, fill=(242,247,255,255))
+    d.text((73,116), "MANIKANTA BALAGA", font=title_font, fill=(242,247,255,255))
     d.rounded_rectangle((76,174,124,178), radius=2, fill=(103,232,249,255))
     d.rounded_rectangle((132,174,157,178), radius=2, fill=(167,139,250,255))
     d.text((76,195), "SOFTWARE  ·  AI  ·  DATA SCIENCE", font=sub_font, fill=(222,232,255,245))
