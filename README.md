@@ -42,49 +42,74 @@ All public project repositories are indexed below. This list refreshes automatic
 
 > Software engineering student focused on practical projects in AI, data science, application security, and interactive software.
 
-## Selected projects
+## All public repositories
+
+A concise directory of every public project repository on this profile.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <p><strong>01 / CREATIVE SYSTEMS</strong></p>
-      <h3>🎨 AI Print OS</h3>
-      A browser-based print-design workspace with editable templates, canvas editing, local project storage, export tools, and optional AI/third-party integrations.
-      <br/><br/>
-      <strong>Verified stack:</strong> HTML · CSS · JavaScript · serverless API adapters
-      <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/ai-printos"><img src="https://img.shields.io/badge/View%20repository-View%20source-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View AI Print OS source repository" /></a>
-      <br/><sub>Public repository. Live integration credentials are not assumed to be configured.</sub>
+      <p><strong>01 / CREATIVE SOFTWARE</strong></p>
+      <h3>AI Print OS</h3>
+      Browser-based print design editor with templates, text and image editing, layer controls, project storage, and PNG/PDF export.
+      <p><strong>Stack:</strong> HTML · CSS · JavaScript</p>
+      <a href="https://github.com/manikantakarthik30-blip/ai-printos">View repository →</a>
     </td>
     <td width="50%" valign="top">
       <p><strong>02 / APPLICATION SECURITY</strong></p>
-      <h3>🛡️ Cyber-OS</h3>
-      A Flutter security-tool concept with secret and dependency scanning, security reporting, repository/ZIP workflows, and an AI-assisted remediation direction.
-      <br/><br/>
-      <strong>Verified stack:</strong> Flutter · Dart · Riverpod · Dio · Python · FastAPI
-      <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/CYBER-OS"><img src="https://img.shields.io/badge/View%20repository-View%20source-7547D8?style=for-the-badge&logo=github&logoColor=white" alt="View Cyber-OS source repository" /></a>
-      <br/><sub>Public repository. External authentication and AI integrations require configuration and verification.</sub>
+      <h3>Cyber-OS</h3>
+      Security platform focused on source and dependency checks, repository scanning workflows, findings, and remediation guidance.
+      <p><strong>Stack:</strong> Flutter · Dart · Python · FastAPI</p>
+      <a href="https://github.com/manikantakarthik30-blip/CYBER-OS">View repository →</a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p><strong>03 / ENVIRONMENTAL INTELLIGENCE</strong></p>
-      <h3>🌊 Smart Canal Intelligence System</h3>
-      A cinematic canal-monitoring prototype for Eluru and Ryves Canals, with a 3D UAV scene, dashboard, detection-feed visuals, hotspot views, alerts, and PDF report generation.
-      <br/><br/>
-      <strong>Verified stack:</strong> React · TypeScript · Three.js · Vite · Tailwind CSS
-      <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system"><img src="https://img.shields.io/badge/View%20repository-View%20source-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Smart Canal Intelligence System source repository" /></a>
-      <br/><sub>Prototype notice: the repository documents detection labels and incident figures as demo data, not live municipal telemetry.</sub>
+      <p><strong>03 / COMPUTER VISION</strong></p>
+      <h3>Smart Canal Intelligence System</h3>
+      Canal-monitoring prototype with a 3D UAV scene, dashboard, detection overlays, hotspot views, alerts, and PDF reports.
+      <p><strong>Stack:</strong> React · TypeScript · Three.js</p>
+      <sub>Detection labels and incident figures are demo data, not live municipal telemetry.</sub><br/>
+      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system">View repository →</a>
     </td>
     <td width="50%" valign="top">
-      <p><strong>04 / DATA & EXPERIMENTS</strong></p>
-      <h3>📊 More projects</h3>
-      I also explore data science and application ideas. Browse the repositories directly to inspect source code, documentation, and available implementation details.
+      <p><strong>04 / FINANCIAL APPLICATIONS</strong></p>
+      <h3>NishiraTrade</h3>
+      Paper-trading application concept for exploring market views, virtual portfolios, watchlists, and order workflows.
+      <p><strong>Repository:</strong> nishiratrade</p>
+      <a href="https://github.com/manikantakarthik30-blip/nishiratrade">View repository →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p><strong>05 / MACHINE LEARNING</strong></p>
+      <h3>Fake Job & Internship Detector</h3>
+      Machine-learning project for classifying potentially fraudulent job and internship listings.
+      <p><strong>Methods:</strong> Random Forest · XGBoost · Logistic Regression · TF-IDF</p>
+      <a href="https://github.com/manikantakarthik30-blip/fake-job-detector">View repository →</a>
+    </td>
+    <td width="50%" valign="top">
+      <p><strong>06 / AI CAREER SUPPORT</strong></p>
+      <h3>Job Grief Counselor</h3>
+      Structured career-support assistant for job-loss support, resume feedback, interview preparation, and career action plans.
+      <p><strong>Stack:</strong> Python · Google ADK</p>
+      <a href="https://github.com/manikantakarthik30-blip/job-grief-counselor">View repository →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <p><strong>07 / DATA SCIENCE LEARNING</strong></p>
+      <h3>Python for Data Science</h3>
+      Ongoing practice repository for Python, data analysis, visualization, and machine-learning fundamentals.
+      <p><strong>Libraries:</strong> NumPy · Pandas · Matplotlib · Seaborn · Scikit-learn</p>
+      <a href="https://github.com/manikantakarthik30-blip/python-for-data-science">View repository →</a>
+    </td>
+    <td width="50%" valign="top">
+      <p><strong>COMPLETE DIRECTORY</strong></p>
+      <h3>Browse all repositories</h3>
+      The profile includes public repositories only. Private repositories remain visible only to authorized users.
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip?tab=repositories"><img src="https://img.shields.io/badge/Explore-all%20repositories-242938?style=for-the-badge&logo=github&logoColor=white" alt="Explore all public repositories" /></a>
-      <br/><sub>No demo or feature is presented as live unless it is verified in the linked project.</sub>
+      <a href="https://github.com/manikantakarthik30-blip?tab=repositories">Open GitHub repositories →</a>
     </td>
   </tr>
 </table>
