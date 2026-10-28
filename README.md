@@ -108,7 +108,7 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
 
 *These labels reflect tools present in the repositories, not a claim of expert-level proficiency.*
 
-## ◈ Achievements
+## ◈ Academic record
 
 - **8.3 GPA** — academic performance reported for B.Tech coursework.
   
