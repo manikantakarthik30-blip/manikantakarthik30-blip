@@ -50,9 +50,7 @@ def render_table(repos):
     for repo in repos:
         name = repo["name"]
         url = repo.get("html_url") or f"https://github.com/{OWNER}/{name}"
-        description = (repo.get("description") or "").strip()
-        suffix = f" — {clean_cell(description)}" if description else ""
-        lines.append(f"- [{name}]({url}){suffix}")
+        lines.append(f"- [{name}]({url})")
     if not repos:
         lines.append("- No public repositories found.")
     lines.extend(["", f"[View all public repositories](https://github.com/{OWNER}?tab=repositories)"])
