@@ -1,16 +1,16 @@
-<!-- Multiverse developer portfolio · profile README -->
+<!-- Developer profile README -->
 <p align="center">
-  <img src="./assets/multiverse-tools-orbit.gif" alt="Animated multiverse banner with Python, SQL, React, Flutter, Three.js, AI/ML, FastAPI and Git orbiting a cosmic logo" width="100%" />
+  <img src="./assets/technology-skills-banner.gif" alt="Animated technology banner showing recognizable developer tool logos rotating around the MB initials" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=750&color=71E7FF&center=true&vCenter=true&width=780&lines=Software+%7C+AI+%7C+Data+Science;Exploring+the+multiverse+of+technology;Building+useful+things%2C+one+universe+at+a+time" alt="Animated headline: software, AI, and data science" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=750&color=71E7FF&center=true&vCenter=true&width=780&lines=Software+%7C+AI+%7C+Data+Science;Building+software+across+disciplines;Turning+ideas+into+working+software" alt="Animated headline: software, AI, and data science" />
 </p>
 
 <p align="center">
   <a href="https://github.com/manikantakarthik30-blip"><img src="https://img.shields.io/badge/GitHub-Explore%20my%20work-101827?style=for-the-badge&logo=github&logoColor=white" alt="Explore my GitHub work" /></a>
   <img src="https://img.shields.io/badge/Focus-Data%20Science-087EA4?style=for-the-badge&logo=python&logoColor=white" alt="Data Science focus" />
-  <img src="https://img.shields.io/badge/Design-Multiverse-7547D8?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Multiverse design concept" />
+  <img src="https://img.shields.io/badge/Focus-Engineering-374151?style=for-the-badge&logo=github&logoColor=white" alt="Engineering portfolio" />
 </p>
 
 <p align="center">
@@ -18,13 +18,29 @@
 </p>
 
 # MANIKANTA BALAGA
-### Engineering ideas across software, AI, data, and security.
+### Software engineering, AI, and data science.
 
-I’m a third-year B.Tech Computer Science and Engineering (Data Science) student at **Dhanekula Institute of Engineering and Technology**, based in Vijayawada, India. I learn by building practical projects across creative tooling, application security, and computer-vision concepts.
+I’m a third-year B.Tech Computer Science and Engineering (Data Science) student at **Dhanekula Institute of Engineering and Technology**, based in Vijayawada, India. I build practical projects across creative software, application security, data science, and computer vision.
 
-> **Navigation protocol:** choose a universe below. These links open the actual repositories; GitHub itself does not run a 3D scene inside a README.
+## Public repositories
 
-## ◈ Explore the project multiverse
+All public project repositories are indexed below. This list refreshes automatically.
+
+<!-- PUBLIC_REPOSITORIES:START -->
+- [CYBER-OS](https://github.com/manikantakarthik30-blip/CYBER-OS)
+- [ai-printos](https://github.com/manikantakarthik30-blip/ai-printos)
+- [fake-job-detector](https://github.com/manikantakarthik30-blip/fake-job-detector)
+- [job-grief-counselor](https://github.com/manikantakarthik30-blip/job-grief-counselor)
+- [nishiratrade](https://github.com/manikantakarthik30-blip/nishiratrade)
+- [python-for-data-science](https://github.com/manikantakarthik30-blip/python-for-data-science)
+- [smart-canal-intelligence-system](https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system)
+<!-- PUBLIC_REPOSITORIES:END -->
+
+[View all public repositories](https://github.com/manikantakarthik30-blip?tab=repositories)
+
+> Software engineering student focused on practical projects in AI, data science, application security, and interactive software.
+
+## Selected projects
 
 <table>
   <tr>
@@ -35,7 +51,7 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
       <br/><br/>
       <strong>Verified stack:</strong> HTML · CSS · JavaScript · serverless API adapters
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/ai-printos"><img src="https://img.shields.io/badge/Enter%20universe-View%20source-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View AI Print OS source repository" /></a>
+      <a href="https://github.com/manikantakarthik30-blip/ai-printos"><img src="https://img.shields.io/badge/View%20repository-View%20source-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View AI Print OS source repository" /></a>
       <br/><sub>Public repository. Live integration credentials are not assumed to be configured.</sub>
     </td>
     <td width="50%" valign="top">
@@ -45,7 +61,7 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
       <br/><br/>
       <strong>Verified stack:</strong> Flutter · Dart · Riverpod · Dio · Python · FastAPI
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/CYBER-OS"><img src="https://img.shields.io/badge/Enter%20universe-View%20source-7547D8?style=for-the-badge&logo=github&logoColor=white" alt="View Cyber-OS source repository" /></a>
+      <a href="https://github.com/manikantakarthik30-blip/CYBER-OS"><img src="https://img.shields.io/badge/View%20repository-View%20source-7547D8?style=for-the-badge&logo=github&logoColor=white" alt="View Cyber-OS source repository" /></a>
       <br/><sub>Public repository. External authentication and AI integrations require configuration and verification.</sub>
     </td>
   </tr>
@@ -57,7 +73,7 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
       <br/><br/>
       <strong>Verified stack:</strong> React · TypeScript · Three.js · Vite · Tailwind CSS
       <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system"><img src="https://img.shields.io/badge/Enter%20universe-View%20source-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Smart Canal Intelligence System source repository" /></a>
+      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system"><img src="https://img.shields.io/badge/View%20repository-View%20source-087EA4?style=for-the-badge&logo=github&logoColor=white" alt="View Smart Canal Intelligence System source repository" /></a>
       <br/><sub>Prototype notice: the repository documents detection labels and incident figures as demo data, not live municipal telemetry.</sub>
     </td>
     <td width="50%" valign="top">
@@ -75,7 +91,7 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
 </p>
 
-## ◈ Technology constellations
+## Technical skills
 
 **Programming & data**
 <p>
@@ -108,19 +124,19 @@ I’m a third-year B.Tech Computer Science and Engineering (Data Science) studen
 
 *These labels reflect tools present in the repositories, not a claim of expert-level proficiency.*
 
-## ◈ Academic record
+## Academic record
 
 - **8.3 GPA** — academic performance reported for B.Tech coursework.
   
 
-## ◈ Build philosophy
+## Build philosophy
 
 - Build to learn; document what actually works.
 - Separate prototype data from production data.
 - Treat security, accessibility, and reliable setup instructions as product features.
 - Prefer useful engineering over decorative complexity.
 
-## ◈ Transmission / collaboration
+## Contact
 
 Interested in practical software, AI, data, security, or interactive UI work.
 
@@ -134,4 +150,4 @@ Interested in practical software, AI, data, security, or interactive UI work.
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=manikantakarthik30-blip&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages card" />
 </p>
 
-<p align="center"><sub>Multiverse identity • Open source • Engineering in progress</sub></p>
+<p align="center"><sub>Software engineering • Open source • Continuous learning</sub></p>
