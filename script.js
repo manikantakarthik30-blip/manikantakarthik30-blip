@@ -24,7 +24,7 @@
   }
 
   // Motion is optional; the site remains navigable without WebGL or external JS libraries.
-  const scene = document.querySelector(".orbit-scene");
+  const scene = document.querySelector(".technology-scene");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   if (scene && !reducedMotion.matches && window.matchMedia("(pointer: fine)").matches) {
     scene.addEventListener("pointermove", (event) => {
