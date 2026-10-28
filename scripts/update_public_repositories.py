@@ -46,22 +46,17 @@ def clean_cell(value):
 
 
 def render_table(repos):
-    lines = [
-        "| Repository | Description |",
-        "|---|---|",
-    ]
+    lines = []
     for repo in repos:
         name = repo["name"]
         url = repo.get("html_url") or f"https://github.com/{OWNER}/{name}"
-        description = clean_cell(repo.get("description"))
-        lines.append(f"| [{name}]({url}) | {description} |")
+        description = (repo.get("description") or "").strip()
+        suffix = f" — {clean_cell(description)}" if description else ""
+        lines.append(f"- [{name}]({url}){suffix}")
     if not repos:
-        lines.append("| No public repositories found | Check the GitHub repositories tab |")
-    lines.extend([
-        "",
-        f"[Browse all public repositories on GitHub](https://github.com/{OWNER}?tab=repositories)"
-    ])
-    return "\n".join(lines)
+        lines.append("- No public repositories found.")
+    lines.extend(["", f"[View all public repositories](https://github.com/{OWNER}?tab=repositories)"])
+    return "\\n".join(lines)
 
 
 def main():
