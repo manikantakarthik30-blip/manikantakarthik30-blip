@@ -29,7 +29,6 @@ All public project repositories are indexed below. This list refreshes automatic
 <!-- PUBLIC_REPOSITORIES:START -->
 - [ai-printos](https://github.com/manikantakarthik30-blip/ai-printos)
 - [BUSINESS-DASHBOARD](https://github.com/manikantakarthik30-blip/BUSINESS-DASHBOARD)
-- [CYBER-OS](https://github.com/manikantakarthik30-blip/CYBER-OS)
 - [fake-job-detector](https://github.com/manikantakarthik30-blip/fake-job-detector)
 - [job-grief-counselor](https://github.com/manikantakarthik30-blip/job-grief-counselor)
 - [nishiratrade](https://github.com/manikantakarthik30-blip/nishiratrade)
