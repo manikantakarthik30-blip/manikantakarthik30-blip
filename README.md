@@ -28,7 +28,6 @@ All public project repositories are indexed below. This list refreshes automatic
 
 <!-- PUBLIC_REPOSITORIES:START -->
 - [ai-printos](https://github.com/manikantakarthik30-blip/ai-printos)
-- [BUSINESS-DASHBOARD](https://github.com/manikantakarthik30-blip/BUSINESS-DASHBOARD)
 - [fake-job-detector](https://github.com/manikantakarthik30-blip/fake-job-detector)
 - [job-grief-counselor](https://github.com/manikantakarthik30-blip/job-grief-counselor)
 - [nishiratrade](https://github.com/manikantakarthik30-blip/nishiratrade)
@@ -38,13 +37,11 @@ All public project repositories are indexed below. This list refreshes automatic
 [View all public repositories](https://github.com/manikantakarthik30-blip?tab=repositories)
 <!-- PUBLIC_REPOSITORIES:END -->
 
-[View all public repositories](https://github.com/manikantakarthik30-blip?tab=repositories)
-
 > Software engineering student focused on practical projects in AI, data science, application security, and interactive software.
 
-## All public repositories
+## Public project portfolio
 
-A concise directory of every public project repository on this profile.
+The following projects are public and can be opened by anyone visiting this profile.
 
 <table>
   <tr>
@@ -53,66 +50,51 @@ A concise directory of every public project repository on this profile.
       <h3>AI Print OS</h3>
       Browser-based print design editor with templates, text and image editing, layer controls, project storage, and PNG/PDF export.
       <p><strong>Stack:</strong> HTML · CSS · JavaScript</p>
-      <a href="https://github.com/manikantakarthik30-blip/ai-printos">View repository →</a>
+      <a href="https://github.com/manikantakarthik30-blip/ai-printos">View public repository →</a>
     </td>
     <td width="50%" valign="top">
-      <p><strong>02 / APPLICATION SECURITY</strong></p>
-      <h3>Cyber-OS</h3>
-      Security platform focused on source and dependency checks, repository scanning workflows, findings, and remediation guidance.
-      <p><strong>Stack:</strong> Flutter · Dart · Python · FastAPI</p>
-      <a href="https://github.com/manikantakarthik30-blip/CYBER-OS">View repository →</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <p><strong>03 / COMPUTER VISION</strong></p>
+      <p><strong>02 / COMPUTER VISION</strong></p>
       <h3>Smart Canal Intelligence System</h3>
       Canal-monitoring prototype with a 3D UAV scene, dashboard, detection overlays, hotspot views, alerts, and PDF reports.
       <p><strong>Stack:</strong> React · TypeScript · Three.js</p>
       <sub>Detection labels and incident figures are demo data, not live municipal telemetry.</sub><br/>
-      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system">View repository →</a>
-    </td>
-    <td width="50%" valign="top">
-      <p><strong>04 / FINANCIAL APPLICATIONS</strong></p>
-      <h3>NishiraTrade</h3>
-      Paper-trading application concept for exploring market views, virtual portfolios, watchlists, and order workflows.
-      <p><strong>Repository:</strong> nishiratrade</p>
-      <a href="https://github.com/manikantakarthik30-blip/nishiratrade">View repository →</a>
+      <a href="https://github.com/manikantakarthik30-blip/smart-canal-intelligence-system">View public repository →</a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p><strong>05 / MACHINE LEARNING</strong></p>
+      <p><strong>03 / FINANCIAL APPLICATIONS</strong></p>
+      <h3>NishiraTrade</h3>
+      Paper-trading application for exploring market views, virtual portfolios, watchlists, and order workflows.
+      <a href="https://github.com/manikantakarthik30-blip/nishiratrade">View public repository →</a>
+    </td>
+    <td width="50%" valign="top">
+      <p><strong>04 / MACHINE LEARNING</strong></p>
       <h3>Fake Job & Internship Detector</h3>
       Machine-learning project for classifying potentially fraudulent job and internship listings.
       <p><strong>Methods:</strong> Random Forest · XGBoost · Logistic Regression · TF-IDF</p>
-      <a href="https://github.com/manikantakarthik30-blip/fake-job-detector">View repository →</a>
-    </td>
-    <td width="50%" valign="top">
-      <p><strong>06 / AI CAREER SUPPORT</strong></p>
-      <h3>Job Grief Counselor</h3>
-      Structured career-support assistant for job-loss support, resume feedback, interview preparation, and career action plans.
-      <p><strong>Stack:</strong> Python · Google ADK</p>
-      <a href="https://github.com/manikantakarthik30-blip/job-grief-counselor">View repository →</a>
+      <a href="https://github.com/manikantakarthik30-blip/fake-job-detector">View public repository →</a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <p><strong>07 / DATA SCIENCE LEARNING</strong></p>
-      <h3>Python for Data Science</h3>
-      Ongoing practice repository for Python, data analysis, visualization, and machine-learning fundamentals.
-      <p><strong>Libraries:</strong> NumPy · Pandas · Matplotlib · Seaborn · Scikit-learn</p>
-      <a href="https://github.com/manikantakarthik30-blip/python-for-data-science">View repository →</a>
+      <p><strong>05 / AI CAREER SUPPORT</strong></p>
+      <h3>Job Grief Counselor</h3>
+      Career-support assistant for job-loss support, resume feedback, interview preparation, and career action plans.
+      <p><strong>Stack:</strong> Python · Google ADK</p>
+      <a href="https://github.com/manikantakarthik30-blip/job-grief-counselor">View public repository →</a>
     </td>
     <td width="50%" valign="top">
-      <p><strong>COMPLETE DIRECTORY</strong></p>
-      <h3>Browse all repositories</h3>
-      The profile includes public repositories only. Private repositories remain visible only to authorized users.
-      <br/><br/>
-      <a href="https://github.com/manikantakarthik30-blip?tab=repositories">Open GitHub repositories →</a>
+      <p><strong>06 / DATA SCIENCE LEARNING</strong></p>
+      <h3>Python for Data Science</h3>
+      Practice repository for Python, data analysis, visualization, and machine-learning fundamentals.
+      <p><strong>Libraries:</strong> NumPy · Pandas · Matplotlib · Seaborn · Scikit-learn</p>
+      <a href="https://github.com/manikantakarthik30-blip/python-for-data-science">View public repository →</a>
     </td>
   </tr>
 </table>
+
+[Browse the complete public repository list on GitHub](https://github.com/manikantakarthik30-blip?tab=repositories)
 
 <p align="center">
   <img src="./assets/energy-divider.svg" alt="" width="100%" />
