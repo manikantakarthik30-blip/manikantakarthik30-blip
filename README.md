@@ -118,8 +118,6 @@ The following projects are public and can be opened by anyone visiting this prof
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111" alt="JavaScript" />
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart" />
 </p>
 
 **Backend & tools**
@@ -144,6 +142,7 @@ The following projects are public and can be opened by anyone visiting this prof
 - Separate prototype data from production data.
 - Treat security, accessibility, and reliable setup instructions as product features.
 - Prefer useful engineering over decorative complexity.
+- Use AI as companion not as replacement
 
 ## Contact
 
