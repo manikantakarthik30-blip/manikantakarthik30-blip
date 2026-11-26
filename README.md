@@ -1,6 +1,6 @@
 <!-- Developer profile README -->
 <p align="center">
-  <img src="./assets/technology-skills-banner.gif" alt="Animated technology banner showing recognizable developer tool logos rotating around the MB initials" width="100%" />
+  <img src="./assets/technology-skills-banner-v2.gif" alt="Animated technology banner showing recognizable developer tool logos rotating around the MB initials" width="100%" />
 </p>
 
 <p align="center">
