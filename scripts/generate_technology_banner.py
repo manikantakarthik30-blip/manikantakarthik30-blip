@@ -40,7 +40,6 @@ TOOLS = [
     ("PYTHON", "3776AB", "python", "develop"),
     ("MYSQL", "4479A1", "mysql", "develop"),
     ("REACT", "61DAFB", "react", "develop"),
-    ("FLUTTER", "54C5F8", "flutter", "develop"),
     ("THREE.JS", "FFFFFF", "threedotjs", "develop"),
     ("FASTAPI", "009688", "fastapi", "develop"),
     ("GIT", "F05032", "git", "develop"),
